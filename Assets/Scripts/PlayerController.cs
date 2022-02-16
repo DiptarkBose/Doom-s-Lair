@@ -12,14 +12,18 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveDirection;
 
     private int keyPieceCount;
+    private int playerHealth;
     public TextMeshProUGUI keyPieceCountText;
+    public TextMeshProUGUI healthText;
 
     // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         keyPieceCount = 0;
+        playerHealth = 100;
         setKeyPieceCountText();
+        setHealthText();
     }
 
     // Update is called once per frame
@@ -50,10 +54,20 @@ public class PlayerController : MonoBehaviour
             keyPieceCount++;
             setKeyPieceCountText();
         }
+        else if(other.CompareTag("Poison"))
+        {
+            playerHealth -= 10;
+            setHealthText();
+        }
     }
 
     void setKeyPieceCountText()
     {
         keyPieceCountText.text = "Key Pieces: "+keyPieceCount+"/3";
+    }
+
+    void setHealthText()
+    {
+        healthText.text = "Health: " + playerHealth;
     }
 }

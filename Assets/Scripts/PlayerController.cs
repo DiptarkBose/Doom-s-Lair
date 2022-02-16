@@ -1,11 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
-    //public Rigidbody rb;
+    public Rigidbody rb; // why was this commented?
+
+    private int redBallCount;
+    private int blueBallCount;
+
+    private int health;
+
+    public TextMeshProUGUI healthCount;
+
     public float jumpForce;
     public float gravityScale;
     public CharacterController characterController;
@@ -15,8 +24,12 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
         characterController = GetComponent<CharacterController>();
+        
+
+        redBallCount = 0;
+        blueBallCount = 0;
     }
 
     // Update is called once per frame
@@ -46,5 +59,25 @@ public class PlayerController : MonoBehaviour
         }
         moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
         characterController.Move(moveDirection * Time.deltaTime);
+    }
+
+    void setCountText()
+    {
+        healthCount.text = "Health: " + health.ToString();
+        
+        //winTextObject.SetActive(true);
+        
+    }
+
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("RedBall"))
+        {
+            health++;
+            setCountText();
+            Debug.Log("I collide");
+        }
     }
 }

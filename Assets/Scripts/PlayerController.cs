@@ -80,6 +80,11 @@ public class PlayerController : MonoBehaviour
             setHealthText();
             Destroy(other.gameObject);
         }
+        else if(other.CompareTag("Weapon"))
+        {
+            playerHealth -= 10;
+            setHealthText();
+        }
     }
 
     void OnTriggerExit(Collider other)

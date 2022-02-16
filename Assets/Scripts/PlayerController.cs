@@ -73,6 +73,10 @@ public class PlayerController : MonoBehaviour
             {
                 winText.SetActive(true);
             }
+        } else if (other.CompareTag("Weapon"))
+        {
+            playerHealth -= 15;
+            setHealthText();
         }
     }
 

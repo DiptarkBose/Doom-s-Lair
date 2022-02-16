@@ -7,6 +7,7 @@ TagManager:
   - Collectible
   - Poison
   - Door
+  - Weapon
   layers:
   - Default
   - TransparentFX

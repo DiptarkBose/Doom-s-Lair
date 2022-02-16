@@ -74,6 +74,12 @@ public class PlayerController : MonoBehaviour
                 winText.SetActive(true);
             }
         }
+        else if(other.CompareTag("Health"))
+        {
+            playerHealth = Mathf.Clamp(playerHealth + 10, 0, 100);
+            setHealthText();
+            Destroy(other.gameObject);
+        }
     }
 
     void OnTriggerExit(Collider other)

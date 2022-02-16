@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     private int playerHealth;
     public TextMeshProUGUI keyPieceCountText;
     public TextMeshProUGUI healthText;
+    public GameObject cannotWinText;
+    public GameObject winText;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,8 @@ public class PlayerController : MonoBehaviour
         playerHealth = 100;
         setKeyPieceCountText();
         setHealthText();
+        cannotWinText.SetActive(false);
+        winText.SetActive(false);
     }
 
     // Update is called once per frame
@@ -58,6 +62,28 @@ public class PlayerController : MonoBehaviour
         {
             playerHealth -= 10;
             setHealthText();
+        }
+        else if(other.CompareTag("Door"))
+        {
+            if(keyPieceCount < 3)
+            {
+                cannotWinText.SetActive(true);
+            }
+            else
+            {
+                winText.SetActive(true);
+            }
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Door"))
+        {
+            if (keyPieceCount < 3)
+            {
+                cannotWinText.SetActive(false);
+            }
         }
     }
 

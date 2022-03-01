@@ -52,20 +52,20 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Collectible"))
+        if (other.CompareTag("Collectible"))
         {
             other.gameObject.SetActive(false);
             keyPieceCount++;
             setKeyPieceCountText();
         }
-        else if(other.CompareTag("Poison"))
+        else if (other.CompareTag("Poison"))
         {
             playerHealth -= 10;
             setHealthText();
         }
-        else if(other.CompareTag("Door"))
+        else if (other.CompareTag("Door"))
         {
-            if(keyPieceCount < 3)
+            if (keyPieceCount < 3)
             {
                 cannotWinText.SetActive(true);
             }
@@ -74,13 +74,13 @@ public class PlayerController : MonoBehaviour
                 winText.SetActive(true);
             }
         }
-        else if(other.CompareTag("Health"))
+        else if (other.CompareTag("Health"))
         {
             playerHealth = Mathf.Clamp(playerHealth + 10, 0, 100);
             setHealthText();
             Destroy(other.gameObject);
         }
-        else if(other.CompareTag("Weapon"))
+        else if (other.CompareTag("Weapon"))
         {
             playerHealth -= 10;
             setHealthText();
@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
 
     void setKeyPieceCountText()
     {
-        keyPieceCountText.text = "Key Pieces: "+keyPieceCount+"/3";
+        keyPieceCountText.text = "Key Pieces: " + keyPieceCount + "/3";
     }
 
     void setHealthText()

@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1687548822216013991}
   - component: {fileID: 1687548822216013990}
   - component: {fileID: 1687548822216013986}
+  - component: {fileID: 2198957835644263499}
+  - component: {fileID: -5099678475927180368}
   m_Layer: 0
   m_Name: HealthPickup
   m_TagString: Health
@@ -106,5 +108,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: daa3045fe7a81aa4e88cf360374c5649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2198957835644263499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687548822216013989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f8c29b402d45e843b32588b77145072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effects:
+  - effectType: 0
+    attributeChangeType: 0
+    attributeName: Health
+    magnitude: 10
+--- !u!114 &-5099678475927180368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687548822216013989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aee006f1235e6046852e34cee09258a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

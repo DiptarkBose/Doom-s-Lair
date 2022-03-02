@@ -11,23 +11,16 @@ public class PlayerController : MonoBehaviour
     public CharacterController characterController;
     private Vector3 moveDirection;
 
-    private int keyPieceCount;
-    private int playerHealth;
     public TextMeshProUGUI keyPieceCountText;
     public TextMeshProUGUI healthText;
-    public GameObject cannotWinText;
-    public GameObject winText;
+    public AttributeSet attributeSet;
 
     // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        keyPieceCount = 0;
-        playerHealth = 100;
-        setKeyPieceCountText();
-        setHealthText();
-        cannotWinText.SetActive(false);
-        winText.SetActive(false);
+        UpdateUI();
+        attributeSet = gameObject.GetComponentInParent<AttributeSet>();
     }
 
     // Update is called once per frame
@@ -48,63 +41,22 @@ public class PlayerController : MonoBehaviour
         }
         moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
         characterController.Move(moveDirection * Time.deltaTime);
+        UpdateUI();
     }
 
-    void OnTriggerEnter(Collider other)
+    public void UpdateUI()
     {
-        if (other.CompareTag("Collectible"))
-        {
-            other.gameObject.SetActive(false);
-            keyPieceCount++;
-            setKeyPieceCountText();
-        }
-        else if (other.CompareTag("Poison"))
-        {
-            playerHealth -= 10;
-            setHealthText();
-        }
-        else if (other.CompareTag("Door"))
-        {
-            if (keyPieceCount < 3)
-            {
-                cannotWinText.SetActive(true);
-            }
-            else
-            {
-                winText.SetActive(true);
-            }
-        }
-        else if (other.CompareTag("Health"))
-        {
-            playerHealth = Mathf.Clamp(playerHealth + 10, 0, 100);
-            setHealthText();
-            Destroy(other.gameObject);
-        }
-        else if (other.CompareTag("Weapon"))
-        {
-            playerHealth -= 10;
-            setHealthText();
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Door"))
-        {
-            if (keyPieceCount < 3)
-            {
-                cannotWinText.SetActive(false);
-            }
-        }
+        setKeyPieceCountText();
+        setHealthText();
     }
 
     void setKeyPieceCountText()
     {
-        keyPieceCountText.text = "Key Pieces: " + keyPieceCount + "/3";
+        keyPieceCountText.text = "Key Pieces: " + attributeSet.KeyPieceCount + "/3";
     }
 
     void setHealthText()
     {
-        healthText.text = "Health: " + playerHealth;
+        healthText.text = "Health: " + attributeSet.Health;
     }
 }

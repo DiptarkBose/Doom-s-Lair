@@ -927,6 +927,7 @@ GameObject:
   - component: {fileID: 446213530}
   - component: {fileID: 446213535}
   - component: {fileID: 446213534}
+  - component: {fileID: 446213536}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1029,8 +1030,7 @@ MonoBehaviour:
   characterController: {fileID: 446213535}
   keyPieceCountText: {fileID: 1007598609}
   healthText: {fileID: 537034094}
-  cannotWinText: {fileID: 50322675}
-  winText: {fileID: 1837845232}
+  attributeSet: {fileID: 446213536}
 --- !u!143 &446213535
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1049,6 +1049,20 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &446213536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446213529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51c4d2ea5a845ad4db4c3374c8c3fa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  KeyPieceCount: 0
 --- !u!1 &537034092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,6 +1211,7 @@ GameObject:
   - component: {fileID: 608542833}
   - component: {fileID: 608542836}
   - component: {fileID: 608542837}
+  - component: {fileID: 608542839}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Weapon
@@ -1310,6 +1325,23 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &608542839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608542831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f8c29b402d45e843b32588b77145072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effects:
+  - effectType: 0
+    attributeChangeType: 1
+    attributeName: Health
+    magnitude: 30
 --- !u!1 &624868083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,7 +1917,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261045665}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.02, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 862127152}
@@ -2395,6 +2427,28 @@ Transform:
   m_Father: {fileID: 249620340}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -28.513}
+--- !u!1 &2132198470 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3918452471045456033, guid: bb60dcf35730f204b83ba3fb1c592359, type: 3}
+  m_PrefabInstance: {fileID: 3918452471194656561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2132198475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132198470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f8c29b402d45e843b32588b77145072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effects:
+  - effectType: 0
+    attributeChangeType: 1
+    attributeName: Health
+    magnitude: 10
 --- !u!1001 &1687548820548841636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2532,6 +2586,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -321302740644662004, guid: f5dd241e2a78ada4991ced2052a78512, type: 3}
+      propertyPath: winText
+      value: 
+      objectReference: {fileID: 1837845232}
+    - target: {fileID: -321302740644662004, guid: f5dd241e2a78ada4991ced2052a78512, type: 3}
+      propertyPath: KeyThreshHold
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -321302740644662004, guid: f5dd241e2a78ada4991ced2052a78512, type: 3}
+      propertyPath: cannotWinText
+      value: 
+      objectReference: {fileID: 50322675}
     - target: {fileID: 6208259423027812496, guid: f5dd241e2a78ada4991ced2052a78512, type: 3}
       propertyPath: m_Name
       value: Door

@@ -21,15 +21,15 @@ public class sampleEnemyAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            float distance = Vector3.Distance(transform.position, player.transform.position);
-            if (distance < 10f)
-            {
-                aggravated = true;
-                anim["Spin"].speed = 1f;
-            }
-            else
-            {
-                anim["Spin"].speed = 0f;
-            }
+        float distance = Vector3.Distance(transform.position, player.transform.position);
+        if (distance < 10f)
+        {
+            aggravated = true;
+            anim["Spin"].speed = 1f;
+        }
+        else
+        {
+            anim["Spin"].speed = 0f;
+        }
     }
 }

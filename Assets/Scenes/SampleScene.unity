@@ -926,8 +926,8 @@ GameObject:
   - component: {fileID: 446213531}
   - component: {fileID: 446213530}
   - component: {fileID: 446213535}
-  - component: {fileID: 446213534}
   - component: {fileID: 446213536}
+  - component: {fileID: 446213537}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1012,25 +1012,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &446213534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 446213529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9248c2481ce599245af029836ca2ca62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
-  jumpForce: 20
-  gravityScale: 5
-  characterController: {fileID: 446213535}
-  keyPieceCountText: {fileID: 1007598609}
-  healthText: {fileID: 537034094}
-  attributeSet: {fileID: 446213536}
 --- !u!143 &446213535
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1063,6 +1044,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   KeyPieceCount: 0
+--- !u!114 &446213537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446213529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9248c2481ce599245af029836ca2ca62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  jumpForce: 0
+  gravityScale: 0
+  characterController: {fileID: 0}
+  keyPieceCountText: {fileID: 0}
+  healthText: {fileID: 0}
+  attributeSet: {fileID: 0}
+  cannotWinText: {fileID: 0}
+  winText: {fileID: 0}
 --- !u!1 &537034092
 GameObject:
   m_ObjectHideFlags: 0

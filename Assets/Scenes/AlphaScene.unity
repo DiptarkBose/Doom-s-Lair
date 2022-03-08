@@ -2553,6 +2553,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1112042942}
     - target: {fileID: 8255892998546765609, guid: 3a672547f451c4b419636ad6d5745320, type: 3}
+      propertyPath: pivot
+      value: 
+      objectReference: {fileID: 1724693659}
+    - target: {fileID: 8255892998546765609, guid: 3a672547f451c4b419636ad6d5745320, type: 3}
       propertyPath: jumpForce
       value: 15
       objectReference: {fileID: 0}
@@ -2560,6 +2564,14 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 537034094}
+    - target: {fileID: 8255892998546765609, guid: 3a672547f451c4b419636ad6d5745320, type: 3}
+      propertyPath: playerModel
+      value: 
+      objectReference: {fileID: 919132148973571434}
+    - target: {fileID: 8255892998546765609, guid: 3a672547f451c4b419636ad6d5745320, type: 3}
+      propertyPath: rotateSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8255892998546765609, guid: 3a672547f451c4b419636ad6d5745320, type: 3}
       propertyPath: keyPieceCountText
       value: 

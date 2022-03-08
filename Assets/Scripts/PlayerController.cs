@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI healthText;
     public AttributeSet attributeSet;
 
+    public Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,16 +35,21 @@ public class PlayerController : MonoBehaviour
 
         if (characterController.isGrounded)
         {
-            moveDirection.y = 0f;
+            //moveDirection.y = 0f;
             if (Input.GetButtonDown("Jump"))
             {
                 moveDirection.y = jumpForce;
+                //anim.SetBool("IsGrounded", false);
             }
         }
         
         moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
         characterController.Move(moveDirection * Time.deltaTime);
         UpdateUI();
+
+        anim.SetBool("IsGrounded", characterController.isGrounded);
+        anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
+        print(characterController.isGrounded);
     }
 
     public void UpdateUI()

@@ -55,17 +55,18 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AttributeSet.cs" />
     <Compile Include="Assets\Scripts\Collectible.cs" />
+    <Compile Include="Assets\Scripts\ITrapInterface.cs" />
+    <Compile Include="Assets\Scripts\SpikeTrap.cs" />
     <Compile Include="Assets\Scripts\GameplayEffect.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
+    <Compile Include="Assets\PressurePlate.cs" />
     <Compile Include="Assets\Scripts\KeyPieceRotator.cs" />
+    <Compile Include="Assets\Scripts\Trap.cs" />
     <Compile Include="Assets\Scripts\sampleEnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\PressurePlate.cs" />
-    <Compile Include="Assets\Scripts\ITrapInterface.cs" />
-    <Compile Include="Assets\Scripts\Trap.cs" />
-    <Compile Include="Assets\Scripts\SpikeTrap.cs" />
+    <Compile Include="Assets\RockTrap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -6,7 +6,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class WitchContoller : MonoBehaviour
 {
-    public GameObject player;
+    //public GameObject player;
     private Animation anim;
     public GameObject witch;
     private bool aggravated = false;
@@ -16,6 +16,7 @@ public class WitchContoller : MonoBehaviour
      public AttributeSet attributeSet;
     NavMeshAgent navMeshAgent;
     
+    Transform player;
     // Start is called before the first frame update
     void Start()
     {

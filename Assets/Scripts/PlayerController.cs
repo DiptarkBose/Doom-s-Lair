@@ -15,6 +15,10 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI healthText;
     public AttributeSet attributeSet;
 
+    public Animator anim;
+    public Transform pivot;
+    public float rotateSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,14 +37,28 @@ public class PlayerController : MonoBehaviour
 
         if (characterController.isGrounded)
         {
-            moveDirection.y = 0f;
+            //moveDirection.y = 0f;
             if (Input.GetButtonDown("Jump"))
             {
                 moveDirection.y = jumpForce;
             }
         }
+        
         moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
         characterController.Move(moveDirection * Time.deltaTime);
+
+        anim.SetBool("IsGrounded", characterController.isGrounded);
+        anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
+
+        // Move the player in different directions based on Camera Look Directions
+        
+        if (moveDirection.x != 0 || moveDirection.z != 0)
+        {
+            transform.rotation = Quaternion.Euler(0f, pivot.rotation.eulerAngles.y, 0f);
+            Quaternion newRotation = Quaternion.LookRotation(new Vector3(moveDirection.x, 0f, moveDirection.z));
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, newRotation, rotateSpeed*Time.deltaTime);
+        }
+ 
         UpdateUI();
     }
 

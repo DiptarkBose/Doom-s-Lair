@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum EffectType
 {
@@ -44,7 +45,12 @@ public class GameplayEffect : MonoBehaviour
                         attributeSet.GetType().GetField(effect.attributeName).SetValue(attributeSet, Mathf.Clamp(attributeVal + effect.magnitude, 0, 100));
                         break;
                     case AttributeChangeType.Subtract:
-                        attributeSet.GetType().GetField(effect.attributeName).SetValue(attributeSet, Mathf.Clamp(attributeVal - effect.magnitude, 0, 100));
+                        attributeSet.GetType().GetField(effect.attributeName).SetValue(attributeSet, attributeVal - effect.magnitude);
+                        float newAttributeVal = (float)attributeSet.GetType().GetField(effect.attributeName).GetValue(attributeSet);
+                        if (effect.attributeName == "Health" && newAttributeVal <=0)
+                        {
+                            respawn();
+                        }
                         break;
                     case AttributeChangeType.Multiply:
                         attributeSet.GetType().GetField(effect.attributeName).SetValue(attributeSet, Mathf.Clamp(attributeVal * effect.magnitude, 0, 100));
@@ -64,7 +70,10 @@ public class GameplayEffect : MonoBehaviour
             gameObject.GetComponentInParent<GameplayEffect>().ApplyEffect(playerController.attributeSet);
             playerController.UpdateUI();
         }
+    }
 
-
+    private void respawn()
+    {
+        SceneManager.LoadScene("AlphaScene");
     }
 }

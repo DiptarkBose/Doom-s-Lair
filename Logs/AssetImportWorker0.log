@@ -1190,3 +1190,27 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5894.134411 seconds.
+  path: Assets/Animations/WitchAnimator.controller
+  artifactKey: Guid(a53734d4141da4b739a8a61dc65c960b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/WitchAnimator.controller using Guid(a53734d4141da4b739a8a61dc65c960b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a9da26c6b76dee4c96726d93fd1f78') in 0.359375 seconds 
+  Import took 0.590771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3176.841148 seconds.
+  path: Assets/Scripts/Witch/NewBehaviourScript.cs
+  artifactKey: Guid(0e82e3e4214474a0cb58348175907fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Witch/NewBehaviourScript.cs using Guid(0e82e3e4214474a0cb58348175907fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4788c124b7630a9fee2810687a28ec9f') in 0.037133 seconds 
+  Import took 0.147794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.348359 seconds.
+  path: Assets/Scripts/Witch/WitchHealth.cs
+  artifactKey: Guid(0e82e3e4214474a0cb58348175907fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Witch/WitchHealth.cs using Guid(0e82e3e4214474a0cb58348175907fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c24a11d6dc681c7b8d59d27bacf3cdd4') in 0.009702 seconds 
+  Import took 0.016875 seconds .
+

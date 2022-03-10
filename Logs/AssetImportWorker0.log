@@ -1214,3 +1214,11 @@ Received Import Request.
 Start importing Assets/Scripts/Witch/WitchHealth.cs using Guid(0e82e3e4214474a0cb58348175907fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c24a11d6dc681c7b8d59d27bacf3cdd4') in 0.009702 seconds 
   Import took 0.016875 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 1176.580632 seconds.
+  path: Assets/Scripts/Witch/WitchHealth.cs
+  artifactKey: Guid(0e82e3e4214474a0cb58348175907fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Witch/WitchHealth.cs using Guid(0e82e3e4214474a0cb58348175907fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc9731df6acab9d12336e6d96e28122d') in 0.040452 seconds 
+  Import took 0.135330 seconds .
+

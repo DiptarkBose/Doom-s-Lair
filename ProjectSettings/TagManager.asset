@@ -8,15 +8,16 @@ TagManager:
   - Poison
   - Door
   - Health
+  - Weapon
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
+  - WhatIsGround
+  - WhatIsWall
   - 
   - 
   - 

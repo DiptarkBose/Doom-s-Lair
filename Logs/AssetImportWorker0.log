@@ -1,356 +1,988 @@
+Unity Editor version:    2020.3.25f1 (9b9180224418)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 11.6.2 (Build 20G314)
+Darwin version:          20.6.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        8192 MB
 Using pre-set license
-Built from '2020.3/staging' branch; Version is '2020.3.25f1 (9b9180224418) revision 10195328'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'en' Physical Memory: 12049 MB
-BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+Pro License: NO
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity 2020.3.25f1\Editor\Unity.exe
+/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/sugju/Desktop/2022/CS_4455/Doom-s-Lair
+/Users/nicolewilliams/Documents/School/CS 4455/Doom-s-Lair
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59044
-Successfully changed project path to: C:/Users/sugju/Desktop/2022/CS_4455/Doom-s-Lair
-C:/Users/sugju/Desktop/2022/CS_4455/Doom-s-Lair
+49500
+Successfully changed project path to: /Users/nicolewilliams/Documents/School/CS 4455/Doom-s-Lair
+/Users/nicolewilliams/Documents/School/CS 4455/Doom-s-Lair
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 66.71 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 91.29 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.25f1 (9b9180224418)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2020.3.25f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/sugju/Desktop/2022/CS_4455/Doom-s-Lair/Assets
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/nicolewilliams/Documents/School/CS 4455/Doom-s-Lair/Assets
 GfxDevice: creating device client; threaded=0
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) Iris(R) Plus Graphics (ID=0x8a52)
-    Vendor:   
-    VRAM:     6024 MB
-    Driver:   27.20.100.8853
+2022-03-11 16:05:05.442 Unity[1818:25485] Acer XFA240 preferred device: Intel(R) Iris(TM) Plus Graphics (low power)
+2022-03-11 16:05:05.442 Unity[1818:25485] Metal devices available: 1
+2022-03-11 16:05:05.442 Unity[1818:25485] 0: Intel(R) Iris(TM) Plus Graphics (low power)
+2022-03-11 16:05:05.442 Unity[1818:25485] Using device Intel(R) Iris(TM) Plus Graphics (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity 2020.3.25f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity 2020.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity 2020.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56818
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity 2020.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001512 seconds.
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.25f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003818 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 39.95 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 44.48 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.852 seconds
+- Completed reload, in  1.112 seconds
 Domain Reload Profiling:
-	ReloadAssembly (852ms)
-		BeginReloadAssembly (66ms)
+	ReloadAssembly (1112ms)
+		BeginReloadAssembly (68ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (699ms)
-			LoadAssemblies (64ms)
+		EndReloadAssembly (909ms)
+			LoadAssemblies (69ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (205ms)
+			SetupTypeCache (376ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (73ms)
-			SetupLoadedEditorAssemblies (250ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (302ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (40ms)
-				BeforeProcessingInitializeOnLoad (24ms)
-				ProcessInitializeOnLoadAttributes (143ms)
-				ProcessInitializeOnLoadMethodAttributes (37ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (179ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004589 seconds.
+Registered in 0.000394 seconds.
+Required property 'name' not set (Packages/com.unity.services.core/Editor/Core/Unity.Services.Core.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/Collaborate/Unity.CollabProxy.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/Collaborate/Unity.CollabProxy.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.nuget.newtonsoft-json/Tests/Editor/Unity.Nuget.NewtonsoftJson.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/PlasticSCM/Unity.PlasticSCM.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
+Required property 'name' not set (Packages/com.unity.services.core/Editor/Core/Unity.Services.Core.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/Collaborate/Unity.CollabProxy.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/Collaborate/Unity.CollabProxy.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.nuget.newtonsoft-json/Tests/Editor/Unity.Nuget.NewtonsoftJson.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/PlasticSCM/Unity.PlasticSCM.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+Required property 'name' not set (Packages/com.unity.services.core/Editor/Core/Unity.Services.Core.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/Collaborate/Unity.CollabProxy.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/Collaborate/Unity.CollabProxy.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.nuget.newtonsoft-json/Tests/Editor/Unity.Nuget.NewtonsoftJson.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/PlasticSCM/Unity.PlasticSCM.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
 Mono: successfully reloaded assembly
-- Completed reload, in  1.455 seconds
+- Completed reload, in  2.383 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1456ms)
-		BeginReloadAssembly (194ms)
+	ReloadAssembly (2384ms)
+		BeginReloadAssembly (311ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (1196ms)
-			LoadAssemblies (104ms)
+			CreateAndSetChildDomain (58ms)
+		EndReloadAssembly (1937ms)
+			LoadAssemblies (51ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (331ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (89ms)
-			SetupLoadedEditorAssemblies (558ms)
+			SetupTypeCache (321ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (481ms)
+			SetupLoadedEditorAssemblies (644ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (3ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (123ms)
-				ProcessInitializeOnLoadAttributes (408ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (517ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
 				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
 Platform modules already initialized, skipping
+Validating Project structure ... 0.008209 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.043978 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Initializing Unity extensions:
+Required property 'name' not set (Packages/com.unity.services.core/Editor/Core/Unity.Services.Core.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.vscode/Editor/Unity.com.unity.vscode.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Runtime/Unity.TextMeshPro.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Editor/Unity.TextMeshPro.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.visualstudio/Editor/com.unity.ide.visualstudio.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEngine.TestRunner/UnityEngine.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Runtime/UnityEngine.UI.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Editor/Unity.Timeline.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/Runtime/Unity.Timeline.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Scripts/Runtime/Unity.TextMeshPro.asmdef)
+Required property 'name' not set (Packages/com.unity.textmeshpro/Tests/Editor/Unity.TextMeshPro.Editor.Tests.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/Collaborate/Unity.CollabProxy.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/Collaborate/Unity.CollabProxy.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.test-framework/UnityEditor.TestRunner/UnityEditor.TestRunner.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Tests/Editor/UnityEditor.UI.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.nuget.newtonsoft-json/Tests/Editor/Unity.Nuget.NewtonsoftJson.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Editor/UnityEditor.UI.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Editor/PlasticSCM/Unity.PlasticSCM.Editor.asmdef)
+Required property 'name' not set (Packages/com.unity.collab-proxy/Tests/Editor/PlasticSCM/Unity.PlasticSCM.EditorTests.asmdef)
+Required property 'name' not set (Packages/com.unity.timeline/DocCodeExamples/DocCodeExamples.asmdef)
+Required property 'name' not set (Packages/com.unity.ide.rider/Rider/Editor/com.unity.ide.rider.asmdef)
+Required property 'name' not set (Packages/com.unity.ugui/Runtime/UnityEngine.UI.asmdef)
+[C# Project] Writing /Users/nicolewilliams/Documents/School/CS 4455/Doom-s-Lair/Doom-s-Lair.sln because it has changed
+[C# Project] First difference on line 2
+
+[C# Project] Current /Users/nicolewilliams/Documents/School/CS 4455/Doom-s-Lair/Doom-s-Lair.sln:
+[C# Project]   002: Microsoft Visual Studio Solution File, Format Version 12.00
+[C# Project]   003: # Visual Studio 15
+[C# Project]   004: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{E32B03A6-2DBF-CEC8-E6ED-6AB21FDF2BAF}"
+[C# Project]   005: EndProject
+[C# Project]   006: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponents", "NavMeshComponents.csproj", "{91AD6B6E-BD2E-0516-983F-83720929C042}"
+
+[C# Project] New /Users/nicolewilliams/Documents/School/CS 4455/Doom-s-Lair/Doom-s-Lair.sln:
+[C# Project]   002: Microsoft Visual Studio Solution File, Format Version 11.00
+[C# Project]   003: # Visual Studio 2010
+[C# Project]   004: 
+[C# Project]   005: Global
+[C# Project]   006: 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+Script is not up to date after domain reload: guid(51c4d2ea5a845ad4db4c3374c8c3fa22) path("Assets/Scripts/AttributeSet.cs") state(2)
+Script is not up to date after domain reload: guid(23ad0fd180070ef43bcb028faf70dd20) path("Assets/Scripts/Collectible.cs") state(2)
+Script is not up to date after domain reload: guid(9f8c29b402d45e843b32588b77145072) path("Assets/Scripts/GameplayEffect.cs") state(2)
+Script is not up to date after domain reload: guid(0de62a5c12374a7439e87f9a466f75eb) path("Assets/Door.cs") state(2)
+Script is not up to date after domain reload: guid(daa3045fe7a81aa4e88cf360374c5649) path("Assets/Scripts/KeyPieceRotator.cs") state(2)
+Script is not up to date after domain reload: guid(b1b72846954582847a89ae270c1e913f) path("Assets/Scripts/sampleEnemyAttack.cs") state(2)
+Script is not up to date after domain reload: guid(5aee006f1235e6046852e34cee09258a) path("Assets/Health.cs") state(2)
+Script is not up to date after domain reload: guid(796f8d99fe024974db93e0a47335d202) path("Assets/Scripts/CameraController.cs") state(2)
+Script is not up to date after domain reload: guid(9248c2481ce599245af029836ca2ca62) path("Assets/Scripts/PlayerController.cs") state(2)
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Script is not up to date after domain reload: guid(51c4d2ea5a845ad4db4c3374c8c3fa22) path("Assets/Scripts/AttributeSet.cs") state(2)
+Script is not up to date after domain reload: guid(23ad0fd180070ef43bcb028faf70dd20) path("Assets/Scripts/Collectible.cs") state(2)
+Script is not up to date after domain reload: guid(9f8c29b402d45e843b32588b77145072) path("Assets/Scripts/GameplayEffect.cs") state(2)
+Script is not up to date after domain reload: guid(0de62a5c12374a7439e87f9a466f75eb) path("Assets/Door.cs") state(2)
+Script is not up to date after domain reload: guid(daa3045fe7a81aa4e88cf360374c5649) path("Assets/Scripts/KeyPieceRotator.cs") state(2)
+Script is not up to date after domain reload: guid(b1b72846954582847a89ae270c1e913f) path("Assets/Scripts/sampleEnemyAttack.cs") state(2)
+Script is not up to date after domain reload: guid(5aee006f1235e6046852e34cee09258a) path("Assets/Health.cs") state(2)
+Script is not up to date after domain reload: guid(796f8d99fe024974db93e0a47335d202) path("Assets/Scripts/CameraController.cs") state(2)
+Script is not up to date after domain reload: guid(9248c2481ce599245af029836ca2ca62) path("Assets/Scripts/PlayerController.cs") state(2)
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1522 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 71.1 MB.
-System memory in use after: 71.2 MB.
+Unloading 1513 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.2 MB.
+System memory in use after: 130.1 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1954.
-Total: 5.502000 ms (FindLiveObjects: 0.387400 ms CreateObjectMapping: 0.138900 ms MarkObjects: 4.841400 ms  DeleteObjects: 0.132000 ms)
+Unloading 1507 unused Assets to reduce memory usage. Loaded Objects now: 499.
+Total: 4.211870 ms (FindLiveObjects: 0.142333 ms CreateObjectMapping: 0.051391 ms MarkObjects: 2.585867 ms  DeleteObjects: 1.430846 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/StylizedHandPaintedDungeon(Free)
-  artifactKey: Guid(3e3fcbe6eced5b54ba42e8e45ba2a2c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedHandPaintedDungeon(Free) using Guid(3e3fcbe6eced5b54ba42e8e45ba2a2c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50ffed4988902e41eb437512dc6afc54') in 0.018419 seconds 
-  Import took 0.022998 seconds .
+  path: Assets/Soldier_Assets/Walking.fbx
+  artifactKey: Guid(c40bc8e6fab00c148871d56582b687b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Soldier_Assets/Walking.fbx using Guid(c40bc8e6fab00c148871d56582b687b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 1.563186 seconds  code(4) message(Build asset version error: assets/soldier_assets/walking.fbx in SourceAssetDB has modification time of '2022-03-11T17:11:34.8933745Z' while content on disk has modification time of '2022-03-11T21:04:14Z')
+  ERROR: Build asset version error: assets/soldier_assets/walking.fbx in SourceAssetDB has modification time of '2022-03-11T17:11:34.8933745Z' while content on disk has modification time of '2022-03-11T21:04:14Z'
+  Import took 1.568811 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1340.966190 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(1d3dc6e4fcc4e0a47845b6784df169d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(1d3dc6e4fcc4e0a47845b6784df169d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88716ae285ee2d5065368b575d30aace') in 0.032384 seconds 
-  Import took 0.040188 seconds .
+  Time since last request: 0.000473 seconds.
+  path: Assets/Soldier_Assets/vanguard_t_choonyung (1).fbx
+  artifactKey: Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Soldier_Assets/vanguard_t_choonyung (1).fbx using Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 1.609595 seconds  code(4) message(Build asset version error: assets/soldier_assets/vanguard_t_choonyung (1).fbx in SourceAssetDB has modification time of '2022-03-11T17:10:43.0619691Z' while content on disk has modification time of '2022-03-11T21:04:14Z')
+  ERROR: Build asset version error: assets/soldier_assets/vanguard_t_choonyung (1).fbx in SourceAssetDB has modification time of '2022-03-11T17:10:43.0619691Z' while content on disk has modification time of '2022-03-11T21:04:14Z'
+  Import took 1.611028 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 845.262334 seconds.
-  path: Assets/StylizedHandPaintedDungeon(Free)/New Folder
+  Time since last request: 16.128761 seconds.
+  path: 
+  artifactKey: Guid(10c2313aaafd746b5be2fa625cba34a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(10c2313aaafd746b5be2fa625cba34a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000044 seconds  code(3) message(Unknown asset with GUID '10c2313aaafd746b5be2fa625cba34a7')
+  ERROR: Unknown asset with GUID '10c2313aaafd746b5be2fa625cba34a7'
+  Import took 0.000529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 490.112138 seconds.
+  path: Assets/Soldier_Assets
   artifactKey: Guid(fb382cbd90e74484ab9d84dbf6308417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedHandPaintedDungeon(Free)/New Folder using Guid(fb382cbd90e74484ab9d84dbf6308417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f60757fbbab692857a09e6150c8f22') in 0.020542 seconds 
-  Import took 0.026119 seconds .
+Start importing Assets/Soldier_Assets using Guid(fb382cbd90e74484ab9d84dbf6308417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000878 seconds  code(4) message(Build asset version error: assets/soldier_assets.meta in SourceAssetDB has modification time of '2022-03-11T17:12:00.2485736Z' while content on disk has modification time of '2022-03-11T21:04:14Z')
+  ERROR: Build asset version error: assets/soldier_assets.meta in SourceAssetDB has modification time of '2022-03-11T17:12:00.2485736Z' while content on disk has modification time of '2022-03-11T21:04:14Z'
+  Import took 0.002293 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 92.172459 seconds.
-  path: Assets/StylizedHandPaintedDungeon(Free)/Soldier_Assets
-  artifactKey: Guid(fb382cbd90e74484ab9d84dbf6308417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedHandPaintedDungeon(Free)/Soldier_Assets using Guid(fb382cbd90e74484ab9d84dbf6308417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb8d5873d87cf7b7cb61cc66d2da010') in 0.017842 seconds 
-  Import took 0.024794 seconds .
+  Time since last request: 0.106693 seconds.
+  path: Assets/Soldier_Assets/vanguard_t_choonyung (1).fbx
+  artifactKey: Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Soldier_Assets/vanguard_t_choonyung (1).fbx using Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.243276 seconds  code(4) message(Build asset version error: assets/soldier_assets/vanguard_t_choonyung (1).fbx in SourceAssetDB has modification time of '2022-03-11T17:10:43.0619691Z' while content on disk has modification time of '2022-03-11T21:04:14Z')
+  ERROR: Build asset version error: assets/soldier_assets/vanguard_t_choonyung (1).fbx in SourceAssetDB has modification time of '2022-03-11T17:10:43.0619691Z' while content on disk has modification time of '2022-03-11T21:04:14Z'
+  Import took 0.246559 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.209034 seconds.
-  path: Assets/StylizedHandPaintedDungeon(Free)/Originals/Door.fbx
-  artifactKey: Guid(1fed90e8722c1334d9b51e0b56f26e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedHandPaintedDungeon(Free)/Originals/Door.fbx using Guid(1fed90e8722c1334d9b51e0b56f26e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87a4a2b0b221184fe475ccce10ca74a9') in 0.217942 seconds 
-  Import took 0.220903 seconds .
+  Time since last request: 0.001498 seconds.
+  path: Assets/Soldier_Assets/Walking.fbx
+  artifactKey: Guid(c40bc8e6fab00c148871d56582b687b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Soldier_Assets/Walking.fbx using Guid(c40bc8e6fab00c148871d56582b687b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.024997 seconds  code(4) message(Build asset version error: assets/soldier_assets/walking.fbx in SourceAssetDB has modification time of '2022-03-11T17:11:34.8933745Z' while content on disk has modification time of '2022-03-11T21:04:14Z')
+  ERROR: Build asset version error: assets/soldier_assets/walking.fbx in SourceAssetDB has modification time of '2022-03-11T17:11:34.8933745Z' while content on disk has modification time of '2022-03-11T21:04:14Z'
+  Import took 0.026209 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000360 seconds.
-  path: Assets/StylizedHandPaintedDungeon(Free)/Originals/Lamp_02.fbx
-  artifactKey: Guid(495bc5d65ef7c7a47b914d4dd69f0edf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedHandPaintedDungeon(Free)/Originals/Lamp_02.fbx using Guid(495bc5d65ef7c7a47b914d4dd69f0edf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f38ac7bd91ad6e8d591db9e95d08d83') in 0.055817 seconds 
-  Import took 0.058877 seconds .
+  Time since last request: 4.484274 seconds.
+  path: Assets/Soldier_Assets/SoldierController.controller
+  artifactKey: Guid(3886044434c58324388a0d8c3792f6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Soldier_Assets/SoldierController.controller using Guid(3886044434c58324388a0d8c3792f6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 2.588485 seconds  code(4) message(Build asset version error: assets/soldier_assets/soldiercontroller.controller in SourceAssetDB has modification time of '2022-03-11T17:19:12.5005217Z' while content on disk has modification time of '2022-03-11T21:04:14Z')
+  ERROR: Build asset version error: assets/soldier_assets/soldiercontroller.controller in SourceAssetDB has modification time of '2022-03-11T17:19:12.5005217Z' while content on disk has modification time of '2022-03-11T21:04:14Z'
+  Import took 2.605702 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000448 seconds.
-  path: Assets/StylizedHandPaintedDungeon(Free)/Originals/Pillar.fbx
-  artifactKey: Guid(b520dd2e830b53248a9a07d2d9f3f3dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedHandPaintedDungeon(Free)/Originals/Pillar.fbx using Guid(b520dd2e830b53248a9a07d2d9f3f3dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ccbfaaaa81094aee34503299d4c5e02') in 0.076776 seconds 
-  Import took 0.080378 seconds .
+  Time since last request: 65.834387 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000216 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.004518 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000461 seconds.
-  path: Assets/StylizedHandPaintedDungeon(Free)/Originals/Floor.fbx
-  artifactKey: Guid(b31c62c35ced11c4383176ecffe930c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedHandPaintedDungeon(Free)/Originals/Floor.fbx using Guid(b31c62c35ced11c4383176ecffe930c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5facdcc843968607859ddb7bdd754abe') in 0.047670 seconds 
-  Import took 0.050435 seconds .
+  Time since last request: 0.081812 seconds.
+  path: Assets/Soldier_Assets/Walking.fbx
+  artifactKey: Guid(c40bc8e6fab00c148871d56582b687b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Soldier_Assets/Walking.fbx using Guid(c40bc8e6fab00c148871d56582b687b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.041284 seconds  code(4) message(Build asset version error: assets/soldier_assets/walking.fbx in SourceAssetDB has modification time of '2022-03-11T17:11:34.8933745Z' while content on disk has modification time of '2022-03-11T21:04:14Z')
+  ERROR: Build asset version error: assets/soldier_assets/walking.fbx in SourceAssetDB has modification time of '2022-03-11T17:11:34.8933745Z' while content on disk has modification time of '2022-03-11T21:04:14Z'
+  Import took 0.042677 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000444 seconds.
-  path: Assets/StylizedHandPaintedDungeon(Free)/Originals/Wall.fbx
-  artifactKey: Guid(9c33f225c6ee98243a57390a7235bd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedHandPaintedDungeon(Free)/Originals/Wall.fbx using Guid(9c33f225c6ee98243a57390a7235bd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8101109462cf9e2ae64754b606b7e00') in 0.035845 seconds 
-  Import took 0.039248 seconds .
+  Time since last request: 230.495042 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000165 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.005376 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000372 seconds.
-  path: Assets/StylizedHandPaintedDungeon(Free)/Originals/Wall_Entrance.fbx
-  artifactKey: Guid(ce8cc834ba277844da67143cfc370fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedHandPaintedDungeon(Free)/Originals/Wall_Entrance.fbx using Guid(ce8cc834ba277844da67143cfc370fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '636c4740fe8242490420e6080cc4de91') in 0.046752 seconds 
-  Import took 0.049613 seconds .
+  Time since last request: 0.000423 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000054 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.000709 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/StylizedHandPaintedDungeon(Free)/Originals
-  artifactKey: Guid(d5294b976d35e52409c2f08d3cc23786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedHandPaintedDungeon(Free)/Originals using Guid(d5294b976d35e52409c2f08d3cc23786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '546d1c05131ee8d1423d0316a9d34277') in 0.009421 seconds 
-  Import took 0.012098 seconds .
+  Time since last request: 2.929880 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000047 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.000761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010574 seconds.
+  path: 
+  artifactKey: Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000181 seconds  code(3) message(Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e')
+  ERROR: Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e'
+  Import took 0.001317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001786 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000090 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.001649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.534102 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000104 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.001229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: 
+  artifactKey: Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000096 seconds  code(3) message(Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e')
+  ERROR: Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e'
+  Import took 0.000857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000487 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000062 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.000754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.896171 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000134 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.008973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.057311 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000121 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.000927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: 
+  artifactKey: Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000207 seconds  code(3) message(Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e')
+  ERROR: Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e'
+  Import took 0.001046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.252436 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000092 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.001086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: 
+  artifactKey: Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000079 seconds  code(3) message(Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e')
+  ERROR: Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e'
+  Import took 0.000834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001045 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000945 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.001917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.414006 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000082 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.000812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002041 seconds.
+  path: 
+  artifactKey: Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000078 seconds  code(3) message(Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e')
+  ERROR: Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e'
+  Import took 0.000793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008791 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000096 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.000889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.920239 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000084 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.000879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: 
+  artifactKey: Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000059 seconds  code(3) message(Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e')
+  ERROR: Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e'
+  Import took 0.000797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000424 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000075 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.000854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.255279 seconds.
+  path: Assets/Mixamo Assets/Ch23_nonPBR.fbx
+  artifactKey: Guid(9350a9965dfaf024c9d8b9688a470117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mixamo Assets/Ch23_nonPBR.fbx using Guid(9350a9965dfaf024c9d8b9688a470117) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
+ #9 _dispatch_client_callout
+ #10 _dispatch_async_and_wait_invoke
+ #11 _dispatch_client_callout
+ #12 _dispatch_main_queue_callback_4CF
+ #13 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #14 __CFRunLoopRun
+ #15 CFRunLoopRunSpecific
+ #16 RunCurrentEventLoopInMode
+ #17 ReceiveNextEventCommon
+ #18 _BlockUntilNextEventMatchingListInModeWithFilter
+ #19 _DPSNextEvent
+ #20 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #21 -[NSApplication run]
+ #22 NSApplicationMain
+ #23 EditorMain(int, char const**)
+ #24 main
+ #25 start
+
+Requesting import of Guid(9350a9965dfaf024c9d8b9688a470117) Importer(-1,00000000000000000000000000000000), Assets/Mixamo Assets/Ch23_nonPBR.fbx from editor
+Resuming Guid(9350a9965dfaf024c9d8b9688a470117) Importer(-1,00000000000000000000000000000000) -> 7dc3f1d404490a6eac37eb74f4a573d8 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #8 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #9 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
+ #10 _dispatch_client_callout
+ #11 _dispatch_async_and_wait_invoke
+ #12 _dispatch_client_callout
+ #13 _dispatch_main_queue_callback_4CF
+ #14 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #15 __CFRunLoopRun
+ #16 CFRunLoopRunSpecific
+ #17 RunCurrentEventLoopInMode
+ #18 ReceiveNextEventCommon
+ #19 _BlockUntilNextEventMatchingListInModeWithFilter
+ #20 _DPSNextEvent
+ #21 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #22 -[NSApplication run]
+ #23 NSApplicationMain
+ #24 EditorMain(int, char const**)
+ #25 main
+ #26 start
+
+Requesting import of Guid(9350a9965dfaf024c9d8b9688a470117) Importer(-1,00000000000000000000000000000000), Assets/Mixamo Assets/Ch23_nonPBR.fbx from editor
+Resuming Guid(9350a9965dfaf024c9d8b9688a470117) Importer(-1,00000000000000000000000000000000) -> 7dc3f1d404490a6eac37eb74f4a573d8 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+ -> (artifact id: '00000000000000000000000000000000') in 0.091701 seconds  code(4) message(Build asset version error: assets/mixamo assets/ch23_nonpbr.fbx in SourceAssetDB has modification time of '2022-03-09T17:53:32.6489365Z' while content on disk has modification time of '2022-03-11T20:49:08Z')
+  ERROR: Build asset version error: assets/mixamo assets/ch23_nonpbr.fbx in SourceAssetDB has modification time of '2022-03-09T17:53:32.6489365Z' while content on disk has modification time of '2022-03-11T20:49:08Z'
+  Import took 0.092391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Soldier_Assets/vanguard_t_choonyung (1).fbx
+  artifactKey: Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Soldier_Assets/vanguard_t_choonyung (1).fbx using Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.119138 seconds  code(4) message(Build asset version error: assets/soldier_assets/vanguard_t_choonyung (1).fbx in SourceAssetDB has modification time of '2022-03-11T17:10:43.0619691Z' while content on disk has modification time of '2022-03-11T21:04:14Z')
+  ERROR: Build asset version error: assets/soldier_assets/vanguard_t_choonyung (1).fbx in SourceAssetDB has modification time of '2022-03-11T17:10:43.0619691Z' while content on disk has modification time of '2022-03-11T21:04:14Z'
+  Import took 0.120099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.942554 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000092 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.000813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001400 seconds.
+  path: 
+  artifactKey: Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000085 seconds  code(3) message(Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e')
+  ERROR: Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e'
+  Import took 0.000912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000446 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000308 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.001475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.864405 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000073 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.001049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000475 seconds.
+  path: 
+  artifactKey: Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000070 seconds  code(3) message(Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e')
+  ERROR: Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e'
+  Import took 0.000758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000668 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000454 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.001519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.274278 seconds.
+  path: Assets/Mixamo Assets/Ch23_nonPBR.fbx
+  artifactKey: Guid(9350a9965dfaf024c9d8b9688a470117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mixamo Assets/Ch23_nonPBR.fbx using Guid(9350a9965dfaf024c9d8b9688a470117) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
+ #9 _dispatch_client_callout
+ #10 _dispatch_async_and_wait_invoke
+ #11 _dispatch_client_callout
+ #12 _dispatch_main_queue_callback_4CF
+ #13 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #14 __CFRunLoopRun
+ #15 CFRunLoopRunSpecific
+ #16 RunCurrentEventLoopInMode
+ #17 ReceiveNextEventCommon
+ #18 _BlockUntilNextEventMatchingListInModeWithFilter
+ #19 _DPSNextEvent
+ #20 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #21 -[NSApplication run]
+ #22 NSApplicationMain
+ #23 EditorMain(int, char const**)
+ #24 main
+ #25 start
+
+Requesting import of Guid(9350a9965dfaf024c9d8b9688a470117) Importer(-1,00000000000000000000000000000000), Assets/Mixamo Assets/Ch23_nonPBR.fbx from editor
+Resuming Guid(9350a9965dfaf024c9d8b9688a470117) Importer(-1,00000000000000000000000000000000) -> 7dc3f1d404490a6eac37eb74f4a573d8 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #8 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #9 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
+ #10 _dispatch_client_callout
+ #11 _dispatch_async_and_wait_invoke
+ #12 _dispatch_client_callout
+ #13 _dispatch_main_queue_callback_4CF
+ #14 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #15 __CFRunLoopRun
+ #16 CFRunLoopRunSpecific
+ #17 RunCurrentEventLoopInMode
+ #18 ReceiveNextEventCommon
+ #19 _BlockUntilNextEventMatchingListInModeWithFilter
+ #20 _DPSNextEvent
+ #21 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #22 -[NSApplication run]
+ #23 NSApplicationMain
+ #24 EditorMain(int, char const**)
+ #25 main
+ #26 start
+
+Requesting import of Guid(9350a9965dfaf024c9d8b9688a470117) Importer(-1,00000000000000000000000000000000), Assets/Mixamo Assets/Ch23_nonPBR.fbx from editor
+Resuming Guid(9350a9965dfaf024c9d8b9688a470117) Importer(-1,00000000000000000000000000000000) -> 7dc3f1d404490a6eac37eb74f4a573d8 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+ -> (artifact id: '00000000000000000000000000000000') in 0.018596 seconds  code(4) message(Build asset version error: assets/mixamo assets/ch23_nonpbr.fbx in SourceAssetDB has modification time of '2022-03-09T17:53:32.6489365Z' while content on disk has modification time of '2022-03-11T20:49:08Z')
+  ERROR: Build asset version error: assets/mixamo assets/ch23_nonpbr.fbx in SourceAssetDB has modification time of '2022-03-09T17:53:32.6489365Z' while content on disk has modification time of '2022-03-11T20:49:08Z'
+  Import took 0.019296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001068 seconds.
+  path: Assets/Soldier_Assets/vanguard_t_choonyung (1).fbx
+  artifactKey: Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Soldier_Assets/vanguard_t_choonyung (1).fbx using Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.091283 seconds  code(4) message(Build asset version error: assets/soldier_assets/vanguard_t_choonyung (1).fbx in SourceAssetDB has modification time of '2022-03-11T17:10:43.0619691Z' while content on disk has modification time of '2022-03-11T21:04:14Z')
+  ERROR: Build asset version error: assets/soldier_assets/vanguard_t_choonyung (1).fbx in SourceAssetDB has modification time of '2022-03-11T17:10:43.0619691Z' while content on disk has modification time of '2022-03-11T21:04:14Z'
+  Import took 0.092623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.538906 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000047 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.000738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000608 seconds.
+  path: 
+  artifactKey: Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000039 seconds  code(3) message(Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e')
+  ERROR: Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e'
+  Import took 0.000710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000602 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000060 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.000755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021856 seconds.
+  path: Assets/Mixamo Assets/Ch23_nonPBR.fbx
+  artifactKey: Guid(9350a9965dfaf024c9d8b9688a470117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mixamo Assets/Ch23_nonPBR.fbx using Guid(9350a9965dfaf024c9d8b9688a470117) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #8 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
+ #9 _dispatch_client_callout
+ #10 _dispatch_async_and_wait_invoke
+ #11 _dispatch_client_callout
+ #12 _dispatch_main_queue_callback_4CF
+ #13 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #14 __CFRunLoopRun
+ #15 CFRunLoopRunSpecific
+ #16 RunCurrentEventLoopInMode
+ #17 ReceiveNextEventCommon
+ #18 _BlockUntilNextEventMatchingListInModeWithFilter
+ #19 _DPSNextEvent
+ #20 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #21 -[NSApplication run]
+ #22 NSApplicationMain
+ #23 EditorMain(int, char const**)
+ #24 main
+ #25 start
+
+Requesting import of Guid(9350a9965dfaf024c9d8b9688a470117) Importer(-1,00000000000000000000000000000000), Assets/Mixamo Assets/Ch23_nonPBR.fbx from editor
+Resuming Guid(9350a9965dfaf024c9d8b9688a470117) Importer(-1,00000000000000000000000000000000) -> 7dc3f1d404490a6eac37eb74f4a573d8 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+Diagnostics callstack to track who triggered the sub-import:
+ #5 ImportToObjects(core::basic_string<char, core::StringStorageDefault<char> > const&, core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #6 ImportAsset(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #7 ImportAssetWithAutoReleasePool(core::hash_map<AssetDatabase::ImporterID, ImporterInfo, core::hash<AssetDatabase::ImporterID>, std::__1::equal_to<AssetDatabase::ImporterID> > const&, dynamic_array<PostprocessorInfo, 0ul> const&, AssetResolveTracker const&, ImportAssetInputs const&, ImportAssetOutputs&, IImportProgress*)
+ #8 AssetImportWorker::Import(AssetResolver&, WorkerImportPayload const&, WorkerImportResponse&, IImportProgress*, bool*)
+ #9 invocation function for block in AssetImportWorkerClient::HandleMessage(ImportRequestMessage const&)::$_6::operator()() const
+ #10 _dispatch_client_callout
+ #11 _dispatch_async_and_wait_invoke
+ #12 _dispatch_client_callout
+ #13 _dispatch_main_queue_callback_4CF
+ #14 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+ #15 __CFRunLoopRun
+ #16 CFRunLoopRunSpecific
+ #17 RunCurrentEventLoopInMode
+ #18 ReceiveNextEventCommon
+ #19 _BlockUntilNextEventMatchingListInModeWithFilter
+ #20 _DPSNextEvent
+ #21 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+ #22 -[NSApplication run]
+ #23 NSApplicationMain
+ #24 EditorMain(int, char const**)
+ #25 main
+ #26 start
+
+Requesting import of Guid(9350a9965dfaf024c9d8b9688a470117) Importer(-1,00000000000000000000000000000000), Assets/Mixamo Assets/Ch23_nonPBR.fbx from editor
+Resuming Guid(9350a9965dfaf024c9d8b9688a470117) Importer(-1,00000000000000000000000000000000) -> 7dc3f1d404490a6eac37eb74f4a573d8 
+Assertion failed on expression: 'state.state == kUpToDate'
+Assertion failed on expression: 'state.artifactID == result'
+ -> (artifact id: '00000000000000000000000000000000') in 0.020501 seconds  code(4) message(Build asset version error: assets/mixamo assets/ch23_nonpbr.fbx in SourceAssetDB has modification time of '2022-03-09T17:53:32.6489365Z' while content on disk has modification time of '2022-03-11T20:49:08Z')
+  ERROR: Build asset version error: assets/mixamo assets/ch23_nonpbr.fbx in SourceAssetDB has modification time of '2022-03-09T17:53:32.6489365Z' while content on disk has modification time of '2022-03-11T20:49:08Z'
+  Import took 0.021361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Soldier_Assets/vanguard_t_choonyung (1).fbx
+  artifactKey: Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Soldier_Assets/vanguard_t_choonyung (1).fbx using Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.085598 seconds  code(4) message(Build asset version error: assets/soldier_assets/vanguard_t_choonyung (1).fbx in SourceAssetDB has modification time of '2022-03-11T17:10:43.0619691Z' while content on disk has modification time of '2022-03-11T21:04:14Z')
+  ERROR: Build asset version error: assets/soldier_assets/vanguard_t_choonyung (1).fbx in SourceAssetDB has modification time of '2022-03-11T17:10:43.0619691Z' while content on disk has modification time of '2022-03-11T21:04:14Z'
+  Import took 0.087343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.083646 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000050 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.000741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002154 seconds.
+  path: 
+  artifactKey: Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000067 seconds  code(3) message(Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e')
+  ERROR: Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e'
+  Import took 0.000695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000075 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.000778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.860037 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000093 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.000961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: 
+  artifactKey: Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000084 seconds  code(3) message(Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e')
+  ERROR: Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e'
+  Import took 0.001043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000078 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.000744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.078204 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000047 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.001018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000869 seconds.
+  path: 
+  artifactKey: Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000048 seconds  code(3) message(Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e')
+  ERROR: Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e'
+  Import took 0.000702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000477 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000060 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.000739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044467 seconds.
+  path: 
+  artifactKey: Guid(fc4cd0e5fd6fd40b18c6881e1683af4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(fc4cd0e5fd6fd40b18c6881e1683af4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000052 seconds  code(3) message(Unknown asset with GUID 'fc4cd0e5fd6fd40b18c6881e1683af4b')
+  ERROR: Unknown asset with GUID 'fc4cd0e5fd6fd40b18c6881e1683af4b'
+  Import took 0.000816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 94.585647 seconds.
+  path: Assets/Soldier_Assets/vanguard_t_choonyung (1).fbx
+  artifactKey: Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Soldier_Assets/vanguard_t_choonyung (1).fbx using Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.083351 seconds  code(4) message(Build asset version error: assets/soldier_assets/vanguard_t_choonyung (1).fbx in SourceAssetDB has modification time of '2022-03-11T17:10:43.0619691Z' while content on disk has modification time of '2022-03-11T21:04:14Z')
+  ERROR: Build asset version error: assets/soldier_assets/vanguard_t_choonyung (1).fbx in SourceAssetDB has modification time of '2022-03-11T17:10:43.0619691Z' while content on disk has modification time of '2022-03-11T21:04:14Z'
+  Import took 0.084787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000478 seconds.
+  path: Assets/Soldier_Assets/Walking.fbx
+  artifactKey: Guid(c40bc8e6fab00c148871d56582b687b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Soldier_Assets/Walking.fbx using Guid(c40bc8e6fab00c148871d56582b687b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.016247 seconds  code(4) message(Build asset version error: assets/soldier_assets/walking.fbx in SourceAssetDB has modification time of '2022-03-11T17:11:34.8933745Z' while content on disk has modification time of '2022-03-11T21:04:14Z')
+  ERROR: Build asset version error: assets/soldier_assets/walking.fbx in SourceAssetDB has modification time of '2022-03-11T17:11:34.8933745Z' while content on disk has modification time of '2022-03-11T21:04:14Z'
+  Import took 0.017260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.911963 seconds.
+  path: 
+  artifactKey: Guid(2ab96716939c53a4eadc207474d73671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2ab96716939c53a4eadc207474d73671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000082 seconds  code(3) message(Unknown asset with GUID '2ab96716939c53a4eadc207474d73671')
+  ERROR: Unknown asset with GUID '2ab96716939c53a4eadc207474d73671'
+  Import took 0.000789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.342643 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000081 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.000793 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000290 seconds.
-  path: Assets/StylizedHandPaintedDungeon(Free)/Originals/Lamp_01.fbx
-  artifactKey: Guid(80f5a41c215b19a4096e40d8852a7562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedHandPaintedDungeon(Free)/Originals/Lamp_01.fbx using Guid(80f5a41c215b19a4096e40d8852a7562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56fee57bcdfdf10e27d6f0aa340f810c') in 0.033308 seconds 
-  Import took 0.037651 seconds .
+  path: 
+  artifactKey: Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000095 seconds  code(3) message(Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e')
+  ERROR: Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e'
+  Import took 0.000876 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 38.921577 seconds.
-  path: Assets/vanguard_t_choonyung (1).fbx
-  artifactKey: Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/vanguard_t_choonyung (1).fbx using Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d20189817522c6e80d91e371edc3f1') in 0.118228 seconds 
-  Import took 0.122379 seconds .
+  Time since last request: 0.000276 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000064 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.000710 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000313 seconds.
-  path: Assets/vanguard_t_choonyung@Walking.fbx
-  artifactKey: Guid(c40bc8e6fab00c148871d56582b687b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/vanguard_t_choonyung@Walking.fbx using Guid(c40bc8e6fab00c148871d56582b687b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579ae0c62b6c1b0170f073563ddfa299') in 0.018092 seconds 
-  Import took 0.022842 seconds .
+  Time since last request: 0.015614 seconds.
+  path: 
+  artifactKey: Guid(46bd837f119fe42f99e9a298b9e73b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(46bd837f119fe42f99e9a298b9e73b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000067 seconds  code(3) message(Unknown asset with GUID '46bd837f119fe42f99e9a298b9e73b2a')
+  ERROR: Unknown asset with GUID '46bd837f119fe42f99e9a298b9e73b2a'
+  Import took 0.000730 seconds .
 
-========================================================================
-Received Import Request.
-  Time since last request: 56.495139 seconds.
-  path: Assets/vanguard_t_choonyung (1).fbx
-  artifactKey: Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/vanguard_t_choonyung (1).fbx using Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cde395bff63372462ed10a060f90bde') in 0.091607 seconds 
-  Import took 0.097238 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.169493 seconds.
-  path: Assets/vanguard_t_choonyung (1).fbx
-  artifactKey: Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/vanguard_t_choonyung (1).fbx using Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f849866cf2196c98cd865331de3b1b1') in 0.118078 seconds 
-  Import took 0.123972 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.593282 seconds.
-  path: Assets/vanguard_t_choonyung (1).fbx
-  artifactKey: Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/vanguard_t_choonyung (1).fbx using Guid(9f7014f38a0654e4ea4589267bfd623b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e3d34e2ab8f2e8ac3472d7241689d66') in 0.088241 seconds 
-  Import took 0.093501 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 33.220175 seconds.
-  path: Assets/Mixamo Assets/Ch23_nonPBR.fbx
-  artifactKey: Guid(9350a9965dfaf024c9d8b9688a470117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mixamo Assets/Ch23_nonPBR.fbx using Guid(9350a9965dfaf024c9d8b9688a470117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc1000a3adae2ef049f5b685de640d29') in 0.218231 seconds 
-  Import took 0.223128 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 34.236012 seconds.
-  path: Assets/vanguard_t_choonyung@Walking.fbx
-  artifactKey: Guid(c40bc8e6fab00c148871d56582b687b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/vanguard_t_choonyung@Walking.fbx using Guid(c40bc8e6fab00c148871d56582b687b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8e187479698c90fcf93afd7cd1c9f68') in 0.011464 seconds 
-  Import took 0.015646 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 61.697201 seconds.
-  path: Assets/Soldier_Assets/SoldierController.controller
-  artifactKey: Guid(3886044434c58324388a0d8c3792f6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Soldier_Assets/SoldierController.controller using Guid(3886044434c58324388a0d8c3792f6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcb912a52e0776da791c1892d5ffec54') in 0.027789 seconds 
-  Import took 0.030970 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.960034 seconds.
-  path: Assets/Soldier_Assets/Walking.fbx
-  artifactKey: Guid(c40bc8e6fab00c148871d56582b687b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Soldier_Assets/Walking.fbx using Guid(c40bc8e6fab00c148871d56582b687b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4058d29c133fe1c5c96eb88429b03681') in 0.021522 seconds 
-  Import took 0.025549 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008394 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.361 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1362ms)
-		BeginReloadAssembly (150ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (59ms)
-		EndReloadAssembly (1122ms)
-			LoadAssemblies (127ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (441ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (370ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (91ms)
-				ProcessInitializeOnLoadAttributes (252ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (2ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1503 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.8 MB.
-System memory in use after: 86.9 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2000.
-Total: 11.081400 ms (FindLiveObjects: 0.289400 ms CreateObjectMapping: 0.117100 ms MarkObjects: 10.627200 ms  DeleteObjects: 0.044800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

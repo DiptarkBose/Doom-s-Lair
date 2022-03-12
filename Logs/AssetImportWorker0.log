@@ -986,3 +986,30 @@ Start importing  using Guid(46bd837f119fe42f99e9a298b9e73b2a) Importer(815301076
   ERROR: Unknown asset with GUID '46bd837f119fe42f99e9a298b9e73b2a'
   Import took 0.000730 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 996.181392 seconds.
+  path: 
+  artifactKey: Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(2a34e99b2c24f40a985fe88f824b6956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000232 seconds  code(3) message(Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956')
+  ERROR: Unknown asset with GUID '2a34e99b2c24f40a985fe88f824b6956'
+  Import took 0.029463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002783 seconds.
+  path: 
+  artifactKey: Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(4a17b22caf9a34824965dfe4131dd81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000052 seconds  code(3) message(Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e')
+  ERROR: Unknown asset with GUID '4a17b22caf9a34824965dfe4131dd81e'
+  Import took 0.000778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001151 seconds.
+  path: 
+  artifactKey: Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(a50e51cc7d5c249d39da060f754ba52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000167 seconds  code(3) message(Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b')
+  ERROR: Unknown asset with GUID 'a50e51cc7d5c249d39da060f754ba52b'
+  Import took 0.001278 seconds .
+

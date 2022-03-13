@@ -22,6 +22,7 @@ public class PressurePlate : MonoBehaviour
         if (trapInterface != null)
         {
             trapInterface.TriggerTrap();
+            FindObjectOfType<AudioManager>().Play("PressurePlate");
         }
         else
         {

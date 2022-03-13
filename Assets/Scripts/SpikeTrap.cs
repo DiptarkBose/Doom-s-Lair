@@ -50,6 +50,7 @@ public class SpikeTrap : MonoBehaviour, ITrapInterface
             {
                 Debug.Log("ACTIVATE");
                 mAnimator.SetTrigger("TrActivate");
+                FindObjectOfType<AudioManager>().Play("Spike");
                 //SpikeGameObject.transform.position = SpikeGameObject.transform.position + new Vector3(0.0f, 0.875f, 0.0f);
                 Debug.Log(SpikeGameObject.transform.position);
             }

@@ -2,66 +2,99 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed;
-    public float jumpForce;
-    public float gravityScale;
-    public CharacterController characterController;
-    private Vector3 moveDirection;
+    [SerializeField] 
+    private float moveSpeed;
 
-    public TextMeshProUGUI keyPieceCountText;
-    public TextMeshProUGUI healthText;
+    [SerializeField]
+    private float lookSensitivity;
+
+    [SerializeField]
+    private float jumpHeight = 10;
+
+    [SerializeField]
+    private float gravity = 9.81f;
+
+    private CharacterController characterController;
+    private Vector2 moveVector;
+    private Vector2 lookVector;
+    private Vector3 rotation;
+    private float verticalVelocity;
     public AttributeSet attributeSet;
 
+ 
+    public TextMeshProUGUI keyPieceCountText;
+    public TextMeshProUGUI healthText;
     public Animator anim;
-    public Transform pivot;
-    public float rotateSpeed;
+ 
 
     // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        UpdateUI();
         attributeSet = gameObject.GetComponentInParent<AttributeSet>();
+        UpdateUI();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        float yStore = moveDirection.y;
-        moveDirection = (transform.forward * Input.GetAxis("Vertical")) + (transform.right * Input.GetAxis("Horizontal"));
-        moveDirection = moveDirection.normalized * moveSpeed;
-        moveDirection.y = yStore;
-
-        if (characterController.isGrounded)
-        {
-            //moveDirection.y = 0f;
-            if (Input.GetButtonDown("Jump"))
-            {
-                moveDirection.y = jumpForce;
-            }
-        }
-        
-        moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
-        characterController.Move(moveDirection * Time.deltaTime);
+        Move();
+        Rotate();
+        UpdateUI();
 
         anim.SetBool("IsGrounded", characterController.isGrounded);
         anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
-
-        // Move the player in different directions based on Camera Look Directions
-        
-        if (moveDirection.x != 0 || moveDirection.z != 0)
+        /*
+        if(moveVector.x > 0 || moveVector.y > 0)
         {
-            transform.rotation = Quaternion.Euler(0f, pivot.rotation.eulerAngles.y, 0f);
-            Quaternion newRotation = Quaternion.LookRotation(new Vector3(moveDirection.x, 0f, moveDirection.z));
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, newRotation, rotateSpeed*Time.deltaTime);
+            anim.SetFloat("Speed", 5);
         }
- 
-        UpdateUI();
+        */
     }
 
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        moveVector = context.ReadValue<Vector2>();
+    }
+    public void OnLook(InputAction.CallbackContext context)
+    {
+        lookVector = context.ReadValue<Vector2>();
+    }
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        if(characterController.isGrounded && context.performed)
+        {
+            Jump();
+        }
+    }
+
+    private void Move()
+    {
+        verticalVelocity += -gravity*Time.deltaTime;
+
+        if(characterController.isGrounded && verticalVelocity < 0)
+        {
+            verticalVelocity = -0.1f * gravity * Time.deltaTime;
+        }
+        Vector3 move = (transform.right*moveVector.x) + (transform.forward*moveVector.y) + (transform.up * verticalVelocity);
+        characterController.Move(move * moveSpeed * Time.deltaTime);
+    }
+
+    private void Rotate()
+    {
+        rotation.y += (lookVector.x * lookSensitivity * Time.deltaTime);
+        transform.localEulerAngles = rotation;
+    }
+
+    private void Jump()
+    {
+        verticalVelocity = Mathf.Sqrt(jumpHeight * gravity);
+    }
+
+    
     public void UpdateUI()
     {
         setKeyPieceCountText();
@@ -77,4 +110,5 @@ public class PlayerController : MonoBehaviour
     {
         healthText.text = "Health: " + attributeSet.Health;
     }
+
 }

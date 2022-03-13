@@ -64,14 +64,14 @@
     <Compile Include="Assets\Scripts\KeyPieceRotator.cs" />
     <Compile Include="Assets\Scripts\Dart.cs" />
     <Compile Include="Assets\Scripts\Trap.cs" />
+    <Compile Include="Assets\Scripts\Sound.cs" />
     <Compile Include="Assets\Scripts\sampleEnemyAttack.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\PoisonDartTrap.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\RockTrap.cs" />
-    <Compile Include="Assets\Scripts\AudioManager.cs" />
-    <Compile Include="Assets\Scripts\Sound.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

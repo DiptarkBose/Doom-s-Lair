@@ -19,6 +19,7 @@ public class PoisonDartTrap : MonoBehaviour, ITrapInterface
     void ITrapInterface.TriggerTrap()
     {
         Transform[] allChildren = GetComponentsInChildren<Transform>();
+        FindObjectOfType<AudioManager>().Play("Dart");
         foreach (Transform child in allChildren)
         {
             DartSpawner dartSpawner = child.gameObject.GetComponent<DartSpawner>();

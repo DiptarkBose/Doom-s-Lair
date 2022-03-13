@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637806280103975638
+      ticks: 637827852708038935
     m_Hash: 659951101
   m_LockFileStatus:
     m_FilePath: D:/GitHub/Doom-s-Lair/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637806280103975638
+      ticks: 637827852708038935
     m_Hash: 1413613287
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: fd0bc85e3f0d68147aa61f88e6984fb6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - SF Fedora Titles Shadow
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b0a5230e15f172046b60eac942db18ef, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

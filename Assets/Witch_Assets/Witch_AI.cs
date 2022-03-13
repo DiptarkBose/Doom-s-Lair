@@ -9,14 +9,12 @@ public class Witch_AI : MonoBehaviour
     public NavMeshAgent agent;
 
     public Transform player;
+    
+
 
     public LayerMask whatIsGround, whatIsPlayer;
 
-    //Patroling
-    public Vector3 walkPoint;
-    bool walkPointSet;
-    public float walkPointRange;
-
+    
     //Attacking
     public float timeBetweenAttacks;
     bool alreadyAttacked;
@@ -25,9 +23,6 @@ public class Witch_AI : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
-    public int WPN = 1;
-    public Vector3 point1;
-    public Vector3 point2;
 
     private void Awake()
     {
@@ -42,70 +37,17 @@ public class Witch_AI : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if (!playerInSightRange && !playerInAttackRange) Patrolling();
+        if (!playerInSightRange && !playerInAttackRange) Idle();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInSightRange && playerInAttackRange) AttackPlayer();
 
     }
 
-    private void Patrolling()
+    private void Idle()
     {
-        /*
-        if (!walkPointSet) SearchWalkPoint();
-        if (walkPointSet) agent.SetDestination(walkPoint);
-
-        Vector3 distanceToWalkPoint = transform.position - walkPoint;
-
-        //walkpoint reached
-        if (distanceToWalkPoint.magnitude < 1f)
-            walkPointSet = false;
-        */
-
-        if (!walkPointSet)
-        {
-            if (WPN == 1)
-            {
-                SetWalkPoint2();
-            } else
-            {
-                SetWalkPoint1();
-            }
-            walkPointSet = true;
-        }
-        if (walkPointSet) agent.SetDestination(walkPoint);
-
-        Vector3 distanceToWalkPoint = transform.position - walkPoint;
-
-        if (distanceToWalkPoint.magnitude < 1f)
-            walkPointSet = false;
 
     }
 
-    private void SetWalkPoint1()
-    {
-        walkPoint = new Vector3(10, 0, 10);
-        WPN = 1;
-    }
-
-    private void SetWalkPoint2()
-    {
-        walkPoint = new Vector3(10, 0, 25);
-        WPN = 2;
-    }
-
-    private void SearchWalkPoint()
-    {
-        //calculate random point in range
-        float randomZ = Random.Range(-walkPointRange, walkPointRange);
-        float randomX = Random.Range(-walkPointRange, walkPointRange);
-
-        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-
-        if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
-        {
-            walkPointSet = true;
-        }
-    }
 
     private void ChasePlayer()
     {

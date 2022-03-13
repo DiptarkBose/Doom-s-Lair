@@ -604,6 +604,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9f7014f38a0654e4ea4589267bfd623b, type: 3}
   m_PrefabInstance: {fileID: 1378549388}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &42527999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42527998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51c4d2ea5a845ad4db4c3374c8c3fa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 0
+  KeyPieceCount: 0
 --- !u!195 &42528001
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -654,6 +668,22 @@ MonoBehaviour:
   playerInSightRange: 0
   playerInAttackRange: 0
   WPN: 1
+  point1: {x: 0, y: 0, z: 0}
+  point2: {x: 0, y: 0, z: 0}
+--- !u!114 &42528004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42527998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51c4d2ea5a845ad4db4c3374c8c3fa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 50
+  KeyPieceCount: 0
 --- !u!1001 &42872994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25093,7 +25123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a50e51cc7d5c249d39da060f754ba52b, type: 3}
       propertyPath: m_Name
-      value: witch
+      value: Witch
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: a50e51cc7d5c249d39da060f754ba52b, type: 3}
       propertyPath: m_Controller
@@ -25132,6 +25162,45 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &2001751516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001751514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bd837f119fe42f99e9a298b9e73b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 2001751515}
+  player: {fileID: 543450652706494416}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 8
+  timeBetweenAttacks: 0
+  sightRange: 10
+  attackRange: 1
+  playerInSightRange: 0
+  playerInAttackRange: 0
+--- !u!114 &2001751517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001751514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51c4d2ea5a845ad4db4c3374c8c3fa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 50
+  KeyPieceCount: 0
 --- !u!1001 &2003149119
 PrefabInstance:
   m_ObjectHideFlags: 0

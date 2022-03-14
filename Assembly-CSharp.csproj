@@ -47,8 +47,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\AttributeSet.cs" />
      <Compile Include="Assets\Scripts\Collectible.cs" />
+     <Compile Include="Assets\Witch_Assets\Witch_AI.cs" />
      <Compile Include="Assets\Scripts\ITrapInterface.cs" />
      <Compile Include="Assets\Scripts\SpikeTrap.cs" />
      <Compile Include="Assets\Scripts\GameplayEffect.cs" />
@@ -58,11 +60,13 @@
      <Compile Include="Assets\Scripts\Utility\PauseMenuToggle.cs" />
      <Compile Include="Assets\Scripts\KeyPieceRotator.cs" />
      <Compile Include="Assets\Scripts\Dart.cs" />
+     <Compile Include="Assets\Scripts\WitchController.cs" />
      <Compile Include="Assets\Scripts\Trap.cs" />
      <Compile Include="Assets\Scripts\Sound.cs" />
      <Compile Include="Assets\Scripts\Utility\GameQuitter.cs" />
      <Compile Include="Assets\Scripts\sampleEnemyAttack.cs" />
      <Compile Include="Assets\Scripts\Utility\GameStarter.cs" />
+     <Compile Include="Assets\Soldier_Assets\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\PoisonDartTrap.cs" />
@@ -704,6 +708,16 @@
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{8871A798-0F78-E252-9C09-3F89A4CABCF4}</Project>
       <Name>Unity.TextMeshPro</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{2F8F972E-1CBF-502D-57CD-83A41F64C639}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{91AD6B6E-BD2E-0516-983F-83720929C042}</Project>
+      <Name>NavMeshComponents</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Editor.csproj">

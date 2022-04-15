@@ -46,7 +46,10 @@ public class PlayerController : MonoBehaviour
         UpdateUI();
 
         anim.SetBool("IsGrounded", characterController.isGrounded);
-        anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
+        float curSpeed = (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal")));
+        if (Mathf.Abs(Input.GetAxis("Horizontal")) != 0)
+            anim.SetFloat("Left", 1);
+        anim.SetFloat("Speed", curSpeed);
         /*
         if(moveVector.x > 0 || moveVector.y > 0)
         {
@@ -97,8 +100,8 @@ public class PlayerController : MonoBehaviour
     
     public void UpdateUI()
     {
-        setKeyPieceCountText();
-        setHealthText();
+        //setKeyPieceCountText();
+        //setHealthText();
     }
 
     void setKeyPieceCountText()

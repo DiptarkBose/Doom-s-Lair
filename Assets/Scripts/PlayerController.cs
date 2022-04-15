@@ -46,16 +46,27 @@ public class PlayerController : MonoBehaviour
         UpdateUI();
 
         anim.SetBool("IsGrounded", characterController.isGrounded);
+        float side = Input.GetAxis("Horizontal");
         float curSpeed = (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal")));
-        if (Mathf.Abs(Input.GetAxis("Horizontal")) != 0)
-            anim.SetFloat("Left", 1);
-        anim.SetFloat("Speed", curSpeed);
-        /*
-        if(moveVector.x > 0 || moveVector.y > 0)
+        anim.SetFloat("Left", Mathf.Abs(side));
+
+        if (side < 0)
         {
-            anim.SetFloat("Speed", 5);
+            anim.SetBool("Left", true);
+            anim.SetBool("Right", false);
         }
-        */
+        else if (side > 0)
+        {
+            anim.SetBool("Right", true);
+            anim.SetBool("Left", false);
+        }
+        else
+        {
+            anim.SetBool("Left", false);
+            anim.SetBool("Right", false);
+        }
+
+        anim.SetFloat("Speed", curSpeed);
     }
 
     public void OnMove(InputAction.CallbackContext context)

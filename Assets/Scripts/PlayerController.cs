@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
 
         anim.SetBool("IsGrounded", characterController.isGrounded);
         float side = Input.GetAxis("Horizontal");
+        float straight = Input.GetAxis("Vertical");
         float curSpeed = (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal")));
         anim.SetFloat("Left", Mathf.Abs(side));
 
@@ -66,6 +67,12 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("Right", false);
         }
 
+        if (straight < 0)
+            anim.SetBool("Back", true);
+        else if (straight > 0)
+            anim.SetBool("Back", false);
+        else
+            anim.SetBool("Back", false);
         anim.SetFloat("Speed", curSpeed);
     }
 

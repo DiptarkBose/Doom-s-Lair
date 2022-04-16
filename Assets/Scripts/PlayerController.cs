@@ -49,8 +49,8 @@ public class PlayerController : MonoBehaviour
         float side = Input.GetAxis("Horizontal");
         float straight = Input.GetAxis("Vertical");
         float curSpeed = (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal")));
-        anim.SetFloat("Left", Mathf.Abs(side));
 
+        // animator settings
         if (side < 0)
         {
             anim.SetBool("Left", true);
@@ -74,6 +74,11 @@ public class PlayerController : MonoBehaviour
         else
             anim.SetBool("Back", false);
         anim.SetFloat("Speed", curSpeed);
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            anim.SetTrigger("Attack");
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context)

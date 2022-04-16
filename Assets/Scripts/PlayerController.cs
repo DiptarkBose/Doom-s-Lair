@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 rotation;
     private float verticalVelocity;
     public AttributeSet attributeSet;
+    public AudioSource audioSource;
 
  
     public TextMeshProUGUI keyPieceCountText;
@@ -36,6 +37,7 @@ public class PlayerController : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         attributeSet = gameObject.GetComponentInParent<AttributeSet>();
+        audioSource = GetComponent<AudioSource>();
         UpdateUI();
     }
 
@@ -83,6 +85,15 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetTrigger("Kick");
         }
+
+        // audio settings
+        if (curSpeed > 0)
+        {
+            if(!audioSource.isPlaying)
+                audioSource.Play();
+        }
+        else
+            audioSource.Stop();
     }
 
     public void OnMove(InputAction.CallbackContext context)

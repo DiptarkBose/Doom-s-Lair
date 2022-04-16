@@ -79,6 +79,10 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetTrigger("Attack");
         }
+        if (Input.GetMouseButtonDown(1))
+        {
+            anim.SetTrigger("Kick");
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context)

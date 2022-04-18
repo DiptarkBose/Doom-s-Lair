@@ -27,10 +27,7 @@ public class PlayerController : MonoBehaviour
     public AttributeSet attributeSet;
     public AudioSource audioSource;
     public Slider healthSlider;
-
-
     public TextMeshProUGUI keyPieceCountText;
-    public TextMeshProUGUI healthText;
     public Animator anim;
  
 
@@ -141,14 +138,13 @@ public class PlayerController : MonoBehaviour
     public void UpdateUI()
     {
         setHealthBar();
+        setKeyPieceCountText();
     }
 
-    /*
     void setKeyPieceCountText()
     {
-        keyPieceCountText.text = "Key Pieces: " + attributeSet.KeyPieceCount + "/3";
+        keyPieceCountText.text = attributeSet.KeyPieceCount + "";
     }
-    */
 
     void setHealthBar()
     {

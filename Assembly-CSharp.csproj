@@ -78,7 +78,6 @@
     <Compile Include="Assets\PoisonDartTrap.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\RockTrap.cs" />
-    <Compile Include="Assets\HealthBarScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

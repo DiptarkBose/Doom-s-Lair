@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -25,8 +26,9 @@ public class PlayerController : MonoBehaviour
     private float verticalVelocity;
     public AttributeSet attributeSet;
     public AudioSource audioSource;
+    public Slider healthSlider;
 
- 
+
     public TextMeshProUGUI keyPieceCountText;
     public TextMeshProUGUI healthText;
     public Animator anim;
@@ -138,18 +140,19 @@ public class PlayerController : MonoBehaviour
     
     public void UpdateUI()
     {
-        //setKeyPieceCountText();
-        //setHealthText();
+        setHealthBar();
     }
 
+    /*
     void setKeyPieceCountText()
     {
         keyPieceCountText.text = "Key Pieces: " + attributeSet.KeyPieceCount + "/3";
     }
+    */
 
-    void setHealthText()
+    void setHealthBar()
     {
-        healthText.text = "Health: " + attributeSet.Health;
+        healthSlider.value = attributeSet.Health;
     }
 
 }

@@ -19,6 +19,6 @@ public class GameStarter : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("AlphaScene");
+        SceneManager.LoadScene("FinalGameScene");
     }
 }

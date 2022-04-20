@@ -2,15 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(CanvasGroup))]
 public class PauseMenuToggle : MonoBehaviour
 {
-    CanvasGroup canvasGroup;
-    public static bool gamePaused;
+
+    public GameObject PauseScreen;
+    public GameObject health;
+    public GameObject keyText;
+    public GameObject keyImage;
+    public GameObject armor;
+
+    bool GamePaused;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        gamePaused = false;
+        GamePaused = false;
+        PauseScreen.SetActive(false);
     }
 
     // Update is called once per frame
@@ -18,39 +26,36 @@ public class PauseMenuToggle : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            if (canvasGroup.interactable)
-            {
-                canvasGroup.interactable = false;
-                canvasGroup.blocksRaycasts = false;
-                canvasGroup.alpha = 0f;
-            }
+            if(GamePaused)
+                ResumeGame();
             else
-            {
-                canvasGroup.interactable = true;
-                canvasGroup.blocksRaycasts = true;
-                canvasGroup.alpha = 1f;
-            }
-            gamePaused = !gamePaused;
-            //PauseGame();
+                PauseGame();
         }
-    }
-
-    private void Awake()
-    {
-        canvasGroup = GetComponent<CanvasGroup>();
-    }
-
-    /*
-    void PauseGame()
-    {
-        if (gamePaused)
-        {
-            Time.timeScale = 0f;
-        }
+        if (GamePaused)
+            Time.timeScale = 0;
         else
-        {
             Time.timeScale = 1;
-        }
     }
-    */
+
+    public void PauseGame()
+    {
+        GamePaused = true;
+        PauseScreen.SetActive(true);
+        
+        health.SetActive(false);
+        keyText.SetActive(false);
+        keyImage.SetActive(false);
+        armor.SetActive(false);
+    }
+
+    public void ResumeGame()
+    {
+        GamePaused = false;
+        PauseScreen.SetActive(false);
+
+        health.SetActive(true);
+        keyText.SetActive(true);
+        keyImage.SetActive(true);
+        armor.SetActive(true);
+    }
 }

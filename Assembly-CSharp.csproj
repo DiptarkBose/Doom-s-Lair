@@ -82,6 +82,7 @@
     <Compile Include="Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
     <Compile Include="Assets\Scripts\LavaFloorScript.cs" />
     <Compile Include="Assets\Scripts\FireChamberAudio.cs" />
+    <Compile Include="Assets\Scripts\Utility\GameOverHandlerScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

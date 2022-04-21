@@ -23380,6 +23380,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6922870365706128691, guid: 3a672547f451c4b419636ad6d5745320, type: 3}
+      propertyPath: armorSlider
+      value: 
+      objectReference: {fileID: 1597065200}
+    - target: {fileID: 6922870365706128691, guid: 3a672547f451c4b419636ad6d5745320, type: 3}
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 778625499}

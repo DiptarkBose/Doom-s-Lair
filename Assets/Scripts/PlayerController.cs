@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     public AttributeSet attributeSet;
     public AudioSource audioSource;
     public Slider healthSlider;
+    public Slider armorSlider;
     public TextMeshProUGUI keyPieceCountText;
     public Animator anim;
  
@@ -139,6 +140,7 @@ public class PlayerController : MonoBehaviour
     {
         setHealthBar();
         setKeyPieceCountText();
+        armorSlider.value = attributeSet.Armor;
     }
 
     void setKeyPieceCountText()

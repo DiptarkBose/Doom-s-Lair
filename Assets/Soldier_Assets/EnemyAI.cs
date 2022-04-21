@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -51,7 +52,8 @@ public class EnemyAI : MonoBehaviour
     private void Patrolling()
     {
         /*
-        if (!walkPointSet) SearchWalkPoint();
+        
+        if (!walkPointSet) SetWalkPoint();
         if (walkPointSet) agent.SetDestination(walkPoint);
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
@@ -60,13 +62,16 @@ public class EnemyAI : MonoBehaviour
         if (distanceToWalkPoint.magnitude < 1f)
             walkPointSet = false;
         */
+        
+        
 
         if (!walkPointSet)
         {
             if (WPN == 1)
             {
                 SetWalkPoint2();
-            } else
+            }
+            else
             {
                 SetWalkPoint1();
             }
@@ -78,7 +83,24 @@ public class EnemyAI : MonoBehaviour
 
         if (distanceToWalkPoint.magnitude < 1f)
             walkPointSet = false;
+        
+    }
 
+    private void SetWalkPoint()
+    {
+        //calculate random walkpoint in range
+        float randomZ = UnityEngine.Random.Range(-walkPointRange, walkPointRange);
+        float randomX = UnityEngine.Random.Range(-walkPointRange, walkPointRange);
+        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
+
+        if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
+        {
+            walkPointSet = true;
+            Console.WriteLine("walk point is set");
+        }
+            
+        //walkPoint = new Vector3(10, 0, 10);
+       
     }
 
     private void SetWalkPoint1()
@@ -96,8 +118,8 @@ public class EnemyAI : MonoBehaviour
     private void SearchWalkPoint()
     {
         //calculate random point in range
-        float randomZ = Random.Range(-walkPointRange, walkPointRange);
-        float randomX = Random.Range(-walkPointRange, walkPointRange);
+        float randomZ = UnityEngine.Random.Range(-walkPointRange, walkPointRange);
+        float randomX = UnityEngine.Random.Range(-walkPointRange, walkPointRange);
 
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
@@ -139,8 +161,8 @@ public class EnemyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
-    
+
 }

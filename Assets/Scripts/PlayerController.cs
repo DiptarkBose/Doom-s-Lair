@@ -37,14 +37,14 @@ public class PlayerController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         attributeSet = gameObject.GetComponentInParent<AttributeSet>();
         audioSource = GetComponent<AudioSource>();
-        UpdateUI();
+        //UpdateUI();
     }
 
     void Update()
     {
         Move();
         Rotate();
-        UpdateUI();
+        //UpdateUI();
 
         anim.SetBool("IsGrounded", characterController.isGrounded);
         float side = Input.GetAxis("Horizontal");

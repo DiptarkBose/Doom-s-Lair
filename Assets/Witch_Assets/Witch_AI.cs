@@ -20,12 +20,24 @@ public class Witch_AI : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
-    [SerializeField] private Animator anim;
+    public bool m_IsDead;
+    public bool m_IsAttacking;
 
+
+    public Animator anim;
+
+// Start is called before the first frame update
+    void Start()
+    {
+        m_IsDead = false;
+        m_IsAttacking = false;
+    }
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -41,15 +53,26 @@ public class Witch_AI : MonoBehaviour
 
     }
 
+    private void ClearAnim() 
+    {
+        anim.SetBool("isIdle", false);
+        anim.SetBool("isWalking", false);
+        anim.SetBool("isAttacking", false);
+        anim.SetBool("isDead", false);
+    }
+
     private void Idle()
     {
-
+        ClearAnim();
+        anim.SetBool("isIdle", true);
     }
 
 
     private void ChasePlayer()
     {
         agent.SetDestination(player.position);
+        ClearAnim();
+        anim.SetBool("isWalking", true);
     }
 
     private void AttackPlayer()
@@ -58,31 +81,29 @@ public class Witch_AI : MonoBehaviour
         agent.SetDestination(transform.position);
         transform.LookAt(player);
 
-        if (!alreadyAttacked)
-        {
-            ///
+    
             /// attack code here
+            ClearAnim();
+            anim.SetBool("isAttacking", true);
 
-            ///
-            anim.SetBool("kick1", true);
-            
-
-
-            alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
-        }
+            //alreadyAttacked = true;
+            //Invoke(nameof(ResetAttack), timeBetweenAttacks);
     }
 
     private void ResetAttack()
     {
         alreadyAttacked = false;
-        anim.SetBool("kick1", false);
     }
 
-
-    // Start is called before the first frame update
-    void Start()
+    // kill and cleanup enemy
+    protected void MakeDead()
     {
-        
+        ClearAnim();
+        anim.SetBool("isDead", true);
+        //m_AudioSource.PlayOneShot(m_DeathSound);
+        m_IsDead = true;
     }
+
+
+    
 }

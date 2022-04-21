@@ -92516,11 +92516,13 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 8
-  timeBetweenAttacks: 2
+  timeBetweenAttacks: 1
   sightRange: 10
   attackRange: 1
   playerInSightRange: 0
   playerInAttackRange: 0
+  m_IsDead: 0
+  m_IsAttacking: 0
   anim: {fileID: 1378804721}
 --- !u!114 &1378804719
 MonoBehaviour:
@@ -112542,6 +112544,9 @@ MonoBehaviour:
   WPN: 1
   point1: {x: 0, y: 0, z: 0}
   point2: {x: 0, y: 0, z: 0}
+  anim: {fileID: 0}
+  m_IsDead: 0
+  m_IsAttacking: 0
 --- !u!114 &1716788440
 MonoBehaviour:
   m_ObjectHideFlags: 0

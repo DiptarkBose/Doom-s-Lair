@@ -60,6 +60,8 @@
     <Compile Include="Assets\Scripts\ITrapInterface.cs" />
     <Compile Include="Assets\Scripts\SpikeTrap.cs" />
     <Compile Include="Assets\Scripts\GameplayEffect.cs" />
+    <Compile Include="Assets\Scripts\Executions\ExecutionCalculation.cs" />
+    <Compile Include="Assets\Scripts\Executions\ArmorExecutionCalculation.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\DartSpawner.cs" />
     <Compile Include="Assets\Scripts\PressurePlate.cs" />
@@ -81,8 +83,8 @@
     <Compile Include="Assets\Scripts\FireChamberAudio.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\RockTrap.cs" />
-    <Compile Include="Assets\Scripts\Executions\ArmorExecutionCalculation.cs" />
-    <Compile Include="Assets\Scripts\Executions\ExecutionCalculation.cs" />
+    <Compile Include="Assets\Scripts\Utility\GameOverHandlerScript.cs" />
+    <Compile Include="Assets\Scripts\Utility\GameCompleteScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

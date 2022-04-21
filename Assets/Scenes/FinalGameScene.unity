@@ -23388,6 +23388,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 381661472}
     - target: {fileID: 6922870365706128700, guid: 3a672547f451c4b419636ad6d5745320, type: 3}
+      propertyPath: Armor
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922870365706128700, guid: 3a672547f451c4b419636ad6d5745320, type: 3}
       propertyPath: Health
       value: 100
       objectReference: {fileID: 0}

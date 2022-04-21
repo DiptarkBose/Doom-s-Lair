@@ -115,6 +115,8 @@ MonoBehaviour:
     attributeChangeType: 1
     attributeName: Health
     magnitude: 10
+  executions:
+  - {fileID: 0}
 --- !u!114 &5553003860609972116
 MonoBehaviour:
   m_ObjectHideFlags: 0

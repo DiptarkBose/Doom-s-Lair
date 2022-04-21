@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -31,6 +32,7 @@ public class Effect
 public class GameplayEffect : MonoBehaviour
 {
     public Effect[] effects;
+    public List<ExecutionCalculation> executions;
 
     public void ApplyEffect(AttributeSet attributeSet)
     {
@@ -45,9 +47,29 @@ public class GameplayEffect : MonoBehaviour
                         attributeSet.GetType().GetField(effect.attributeName).SetValue(attributeSet, Mathf.Clamp(attributeVal + effect.magnitude, 0, 100));
                         break;
                     case AttributeChangeType.Subtract:
-                        attributeSet.GetType().GetField(effect.attributeName).SetValue(attributeSet, attributeVal - effect.magnitude);
+                        if (effect.attributeName == "Health")
+                        {
+                            float armorVal = (float)attributeSet.GetType().GetField("Armor").GetValue(attributeSet);
+                            Debug.Log(armorVal);
+                            if (armorVal >= 0)
+                            {
+                                Debug.Log(armorVal);
+                                attributeSet.GetType().GetField("Armor").SetValue(attributeSet, Mathf.Clamp(armorVal - effect.magnitude, 0, 100));
+                                float healthDelta = armorVal - effect.magnitude;
+                                if (healthDelta < 0)
+                                {
+                                    Debug.Log(healthDelta);
+                                    attributeSet.GetType().GetField(effect.attributeName).SetValue(attributeSet, Mathf.Clamp(attributeVal - Mathf.Abs(healthDelta), 0, 100));
+                                    Debug.Log(attributeSet.GetType().GetField(effect.attributeName).GetValue(attributeSet));
+                                }
+                            }
+                        }
+                        else
+                        {
+                            attributeSet.GetType().GetField(effect.attributeName).SetValue(attributeSet, Mathf.Clamp(attributeVal - effect.magnitude, 0, 100));
+                        }
                         float newAttributeVal = (float)attributeSet.GetType().GetField(effect.attributeName).GetValue(attributeSet);
-                        if (effect.attributeName == "Health" && newAttributeVal <=0)
+                        if (effect.attributeName == "Health" && newAttributeVal <= 0)
                         {
                             respawn();
                         }
@@ -60,6 +82,10 @@ public class GameplayEffect : MonoBehaviour
                         break;
                 }
             }
+        }
+
+        foreach (ExecutionCalculation ec in executions)
+        { 
         }
     }
     private void OnTriggerEnter(Collider other)

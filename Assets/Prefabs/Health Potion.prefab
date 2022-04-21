@@ -66,6 +66,7 @@ MonoBehaviour:
     attributeChangeType: 0
     attributeName: Health
     magnitude: 10
+  executions: []
 --- !u!114 &20300299543198509
 MonoBehaviour:
   m_ObjectHideFlags: 0

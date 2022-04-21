@@ -9,5 +9,5 @@ public class AttributeSet : MonoBehaviour
     // If an attribute is not used by a GameObject, it should be set to -1;
     public float Health;
     public float KeyPieceCount;
-
+    public float Armor;
 }

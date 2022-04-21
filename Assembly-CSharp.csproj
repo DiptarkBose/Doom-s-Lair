@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\LavaFloorScript.cs" />
     <Compile Include="Assets\Scripts\FireChamberAudio.cs" />
     <Compile Include="Assets\Scripts\Utility\GameOverHandlerScript.cs" />
+    <Compile Include="Assets\Scripts\Utility\GameCompleteScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

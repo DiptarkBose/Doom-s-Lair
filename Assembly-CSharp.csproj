@@ -57,6 +57,7 @@
     <Compile Include="Assets\Scripts\AttributeSet.cs" />
     <Compile Include="Assets\Scripts\Collectible.cs" />
     <Compile Include="Assets\Witch_Assets\Witch_AI.cs" />
+    <Compile Include="Assets\Scripts\Utility\GameCompleteScript.cs" />
     <Compile Include="Assets\Scripts\ITrapInterface.cs" />
     <Compile Include="Assets\Scripts\SpikeTrap.cs" />
     <Compile Include="Assets\Scripts\GameplayEffect.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Assets\Scripts\DartSpawner.cs" />
     <Compile Include="Assets\Scripts\PressurePlate.cs" />
     <Compile Include="Assets\Scripts\Utility\PauseMenuToggle.cs" />
+    <Compile Include="Assets\Scripts\Utility\GameOverHandlerScript.cs" />
     <Compile Include="Assets\Scripts\Dart.cs" />
     <Compile Include="Assets\Scripts\WitchController.cs" />
     <Compile Include="Assets\Scripts\Trap.cs" />
@@ -83,8 +85,6 @@
     <Compile Include="Assets\Scripts\FireChamberAudio.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\RockTrap.cs" />
-    <Compile Include="Assets\Scripts\Utility\GameOverHandlerScript.cs" />
-    <Compile Include="Assets\Scripts\Utility\GameCompleteScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -10,19 +10,17 @@ public class Witch_AI : MonoBehaviour
 
     public Transform player;
     
-
-
     public LayerMask whatIsGround, whatIsPlayer;
 
-    
     //Attacking
-    public float timeBetweenAttacks;
+    public float timeBetweenAttacks;    
     bool alreadyAttacked;
 
     //States
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
+    [SerializeField] private Animator anim;
 
     private void Awake()
     {
@@ -66,6 +64,9 @@ public class Witch_AI : MonoBehaviour
             /// attack code here
 
             ///
+            anim.SetBool("kick1", true);
+            
+
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
@@ -75,6 +76,7 @@ public class Witch_AI : MonoBehaviour
     private void ResetAttack()
     {
         alreadyAttacked = false;
+        anim.SetBool("kick1", false);
     }
 
 

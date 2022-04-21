@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -32956,7 +32956,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449079220}
-  m_LocalRotation: {x: 0.14036891, y: -0.6930343, z: 0.14036888, w: 0.6930344}
+  m_LocalRotation: {x: 0.14036888, y: -0.69303435, z: 0.1403689, w: 0.69303435}
   m_LocalPosition: {x: 43.810184, y: -2.76, z: 26.813631}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -41208,7 +41208,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643671839}
-  m_LocalRotation: {x: 0.14036891, y: -0.6930343, z: 0.14036888, w: 0.6930344}
+  m_LocalRotation: {x: 0.14036888, y: -0.69303435, z: 0.1403689, w: 0.69303435}
   m_LocalPosition: {x: 43.810184, y: -2.76, z: 26.813631}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -92538,11 +92538,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 50
   KeyPieceCount: 0
+--- !u!136 &1378804720
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378804716}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.68
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.82, z: 0}
 --- !u!95 &1378804721 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: a50e51cc7d5c249d39da060f754ba52b, type: 3}
   m_PrefabInstance: {fileID: 1378804714}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1378804722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378804716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f8c29b402d45e843b32588b77145072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effects:
+  - effectType: 0
+    attributeChangeType: 1
+    attributeName: Health
+    magnitude: 20
 --- !u!1001 &1380824338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112561,6 +112592,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 50
   KeyPieceCount: 0
+--- !u!114 &1716788441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716788437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f8c29b402d45e843b32588b77145072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effects:
+  - effectType: 0
+    attributeChangeType: 1
+    attributeName: Health
+    magnitude: 10
+--- !u!136 &1716788442
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716788437}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.04
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.02, z: 0}
 --- !u!1001 &1718672069
 PrefabInstance:
   m_ObjectHideFlags: 0

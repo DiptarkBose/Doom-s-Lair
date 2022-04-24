@@ -12,6 +12,8 @@ public class Witch_AI : MonoBehaviour
     
     public LayerMask whatIsGround, whatIsPlayer;
 
+    public float enemy_health;
+
     //Attacking
     public float timeBetweenAttacks;    
     bool alreadyAttacked;
@@ -104,6 +106,26 @@ public class Witch_AI : MonoBehaviour
         m_IsDead = true;
     }
 
+    private void TakeDamage(int damage)
+    {
+        enemy_health -= damage;
 
-    
+        if (enemy_health <= 0)
+        {
+            Invoke(nameof(DestroyEnemy), 0.5f);
+        }
+    }
+
+    private void DestroyEnemy()
+    {
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        TakeDamage(10);
+    }
+
+
+
 }

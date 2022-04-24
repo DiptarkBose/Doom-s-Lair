@@ -26,7 +26,6 @@ public class WitchContoller : MonoBehaviour
     {
         originalPose = witch.transform.position;
         anim = gameObject.GetComponent<Animation>();
-        anim["Spin"].speed = 0f;
         attributeSet = gameObject.GetComponentInParent<AttributeSet>();
 
         if (navMeshAgent == null)
@@ -49,7 +48,6 @@ public class WitchContoller : MonoBehaviour
         }
         else
         {
-            anim["Spin"].speed = 0f;
             navMeshAgent.enabled = false;
         }
     }

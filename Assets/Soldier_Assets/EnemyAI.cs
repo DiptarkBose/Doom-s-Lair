@@ -12,6 +12,8 @@ public class EnemyAI : MonoBehaviour
 
     public LayerMask whatIsGround, whatIsPlayer;
 
+    public float enemy_health;
+
     //Patroling
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -29,10 +31,23 @@ public class EnemyAI : MonoBehaviour
     public Vector3 point1;
     public Vector3 point2;
 
+    public Animator anim;
+
+    public bool m_IsDead;
+    public bool m_IsAttacking;
+
+     void Start()
+    {
+        m_IsDead = false;
+        m_IsAttacking = false;
+    }
+
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -46,6 +61,14 @@ public class EnemyAI : MonoBehaviour
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInSightRange && playerInAttackRange) AttackPlayer();
 
+    }
+
+    private void ClearAnim() 
+    {
+        anim.SetBool("isIdle", false);
+        anim.SetBool("isWalking", false);
+        anim.SetBool("isAttacking", false);
+        anim.SetBool("isDead", false);
     }
 
     private void Patrolling()
@@ -110,6 +133,8 @@ public class EnemyAI : MonoBehaviour
     private void ChasePlayer()
     {
         agent.SetDestination(player.position);
+        ClearAnim();
+        anim.SetBool("isWalking", true);
     }
 
     private void AttackPlayer()
@@ -118,16 +143,10 @@ public class EnemyAI : MonoBehaviour
         agent.SetDestination(transform.position);
         transform.LookAt(player);
 
-        if (!alreadyAttacked)
-        {
-            ///
             /// attack code here
+            ClearAnim();
+            anim.SetBool("isAttacking", true);
 
-            ///
-
-            alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
-        }
     }
 
     private void ResetAttack()
@@ -135,12 +154,23 @@ public class EnemyAI : MonoBehaviour
         alreadyAttacked = false;
     }
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void TakeDamage(int damage)
     {
-        
+        enemy_health -= damage;
+
+        if (enemy_health <= 0)
+        {
+            Invoke(nameof(DestroyEnemy), 0.5f);
+        }
     }
 
-    
+    private void DestroyEnemy()
+    {
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        TakeDamage(10);
+    }
 }

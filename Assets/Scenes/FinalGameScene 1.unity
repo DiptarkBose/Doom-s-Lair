@@ -92516,6 +92516,7 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 8
+  enemy_health: 0
   timeBetweenAttacks: 1
   sightRange: 10
   attackRange: 1

@@ -86,7 +86,8 @@
     <Compile Include="Assets\Scripts\FireChamberAudio.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\RockTrap.cs" />
-    <Compile Include="Assets\InstructionCanvasControl.cs" />
+    <Compile Include="Assets\Scripts\InstructionCanvasControl.cs" />
+    <Compile Include="Assets\Scripts\SoundRegulatorScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

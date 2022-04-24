@@ -12,7 +12,7 @@ public class Witch_AI : MonoBehaviour
     
     public LayerMask whatIsGround, whatIsPlayer;
 
-    public float enemy_health;
+    public float witch_health;
 
     //Attacking
     public float timeBetweenAttacks;    
@@ -108,9 +108,9 @@ public class Witch_AI : MonoBehaviour
 
     private void TakeDamage(int damage)
     {
-        enemy_health -= damage;
+        witch_health -= damage;
 
-        if (enemy_health <= 0)
+        if (witch_health <= 0)
         {
             Invoke(nameof(DestroyEnemy), 0.5f);
         }

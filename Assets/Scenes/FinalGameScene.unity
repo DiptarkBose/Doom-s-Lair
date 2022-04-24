@@ -33136,7 +33136,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449079220}
-  m_LocalRotation: {x: 0.14036891, y: -0.6930343, z: 0.14036888, w: 0.6930344}
+  m_LocalRotation: {x: 0.14036888, y: -0.69303435, z: 0.1403689, w: 0.69303435}
   m_LocalPosition: {x: 43.810184, y: -2.76, z: 26.813631}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -35274,6 +35274,147 @@ Transform:
   m_Father: {fileID: 2138746899}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &557008107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 557008109}
+  - component: {fileID: 557008108}
+  - component: {fileID: 557008110}
+  m_Layer: 0
+  m_Name: PainSoundHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &557008108
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557008107}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7e1276d7cef7b0243ad12c4c8dababe2, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &557008109
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557008107}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.766266, y: -10.375383, z: 1.0547023}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 44
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &557008110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557008107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5475771b9ff8147b0fe28c14e7b04a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 788872538}
 --- !u!1001 &559963004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41621,7 +41762,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643671839}
-  m_LocalRotation: {x: 0.14036891, y: -0.6930343, z: 0.14036888, w: 0.6930344}
+  m_LocalRotation: {x: 0.14036888, y: -0.69303435, z: 0.1403689, w: 0.69303435}
   m_LocalPosition: {x: 43.810184, y: -2.76, z: 26.813631}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -90814,7 +90955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8377b28f368c45d4199bae71a2a5eabc, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.67903
+      value: 1.0740217
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8377b28f368c45d4199bae71a2a5eabc, type: 3}
       propertyPath: m_LocalScale.z
@@ -90822,7 +90963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8377b28f368c45d4199bae71a2a5eabc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.231
+      value: -8.3617
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8377b28f368c45d4199bae71a2a5eabc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -93191,7 +93332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 727002068649997373, guid: fb74484be8ff6c1409eb9a477f18e2f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.138
+      value: -17.024147
       objectReference: {fileID: 0}
     - target: {fileID: 727002068649997373, guid: fb74484be8ff6c1409eb9a477f18e2f9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -93199,7 +93340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 727002068649997373, guid: fb74484be8ff6c1409eb9a477f18e2f9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.614
+      value: -1.3060119
       objectReference: {fileID: 0}
     - target: {fileID: 727002068649997373, guid: fb74484be8ff6c1409eb9a477f18e2f9, type: 3}
       propertyPath: m_LocalRotation.w

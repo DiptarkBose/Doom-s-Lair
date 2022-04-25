@@ -19,6 +19,6 @@ public class GameStarter : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("FinalGameScene");
+        SceneManager.LoadScene("FinalGameScene 1");
     }
 }

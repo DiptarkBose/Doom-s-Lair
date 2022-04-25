@@ -65,7 +65,7 @@ MonoBehaviour:
   - effectType: 0
     attributeChangeType: 0
     attributeName: Health
-    magnitude: 10
+    magnitude: 25
   executions: []
 --- !u!114 &20300299543198509
 MonoBehaviour:
